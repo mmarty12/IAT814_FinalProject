@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project - Mariia Martyniuk</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <div class="brand-mark">
+            <div class="brand-hex">
+              <svg viewBox="0 0 16 16" fill="none">
+                <rect x="1" y="1" width="5.5" height="5.5" rx="1.5" fill="white" />
+                <rect x="9.5" y="1" width="5.5" height="5.5" rx="1.5" fill="white" opacity=".6" />
+                <rect x="1" y="9.5" width="5.5" height="5.5" rx="1.5" fill="white" opacity=".6" />
+                <circle cx="12.3" cy="12.3" r="2.7" fill="white" />
+              </svg>
+            </div>
+            <div class="brand-name">Board Games Analytics</div>
+          </div>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Overview</div>
+          <button class="nav-item active" onclick="switchView('bubbles', this)">
+            <span class="nav-dot"></span>Game Popularity Map
+          </button>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Ratings</div>
+          <button class="nav-item" onclick="switchView('byname', this)">
+            <span class="nav-dot"></span>By Game Name
+          </button>
+          <button class="nav-item" onclick="switchView('bycategory', this)">
+            <span class="nav-dot"></span>By Category
+          </button>
+          <button class="nav-item" onclick="switchView('bymechanic', this)">
+            <span class="nav-dot"></span>By Mechanic
+          </button>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Analysis</div>
+          <button class="nav-item" onclick="switchView('expansions', this)">
+            <span class="nav-dot"></span>Expansions vs Ratings
+          </button>
+          <button class="nav-item" onclick="switchView('teamsize', this)">
+            <span class="nav-dot"></span>By Team Size
+          </button>
+          <button class="nav-item" onclick="switchView('playtime', this)">
+            <span class="nav-dot"></span>By Playtime
+          </button>
+          <button class="nav-item" onclick="switchView('byyear', this)">
+            <span class="nav-dot"></span>By Year Released
+          </button>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-label">Deep Dive</div>
+          <button class="nav-item" onclick="switchView('distribution', this)">
+            <span class="nav-dot"></span>Distribution Map
+          </button>
+          <button class="nav-item" onclick="switchView('correlation', this)">
+            <span class="nav-dot"></span>Mechanics × Ratings
+          </button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="topbar">
+          <div class="topbar-title" id="topbar-title">Game Popularity — Bubble Map</div>
+          <div id="genre-filters" style="display: flex; gap: 8px; flex-wrap: wrap">
+            <button class="topbar-pill active" onclick="filterGenre(this, 'all')">All</button>
+            <button class="topbar-pill" onclick="filterGenre(this, 'War & History')">War & History</button>
+            <button class="topbar-pill" onclick="filterGenre(this, 'Fantasy & Horror')">Fantasy & Horror</button>
+            <button class="topbar-pill" onclick="filterGenre(this, 'Sci-Fi & Modern')">Sci-Fi & Modern</button>
+            <button class="topbar-pill" onclick="filterGenre(this, 'Economy & Building')">Economy & Building</button>
+            <button class="topbar-pill" onclick="filterGenre(this, 'Adventure & Action')">Adventure & Action</button>
+            <button class="topbar-pill" onclick="filterGenre(this, 'Other')">Other</button>
+          </div>
+        </div>
+
+        <div class="content">
+          <!-- BUBBLE VIEW -->
+          <div id="view-bubbles" style="width: 100%; height: 100%; min-height: 500px; position: relative">
+            <svg id="bubbleSvg" style="width: 100%; height: 100%; display: block"></svg>
+          </div>
+
+          <!-- VIEW 1 -->
+          <div class="secondary-panel" id="view-byname">
+            <div class="panel-heading">Rating of Games by Name</div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Top 25 Rated Games</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-byname"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW 2 -->
+          <div class="secondary-panel" id="view-bycategory">
+            <div class="panel-heading">Rating of Games by Category</div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Avg Rating by Category</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-bycategory"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW 3 -->
+          <div class="secondary-panel" id="view-bymechanic">
+            <div class="panel-heading">Rating of Games by Mechanic</div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Top 15 Mechanics by Avg Rating</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-bymechanic"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW 4 -->
+          <div class="secondary-panel" id="view-expansions">
+            <div class="panel-heading">Games with Expansions vs Ratings</div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Avg Rating: With vs Without Expansions</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-expansions"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW 6 -->
+          <div class="secondary-panel" id="view-teamsize">
+            <div class="panel-heading">Rating of Games by Team Size</div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Avg Rating by Max Player Count</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-teamsize"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW 7 -->
+          <div class="secondary-panel" id="view-playtime">
+            <div class="panel-heading">Rating of Games by Average Playtime</div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Avg Rating by Playtime Bracket</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-playtime"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW 8 -->
+          <div class="secondary-panel" id="view-byyear">
+            <div class="panel-heading">Rating of Games by Year of Release</div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Avg Rating by Year (1970–2016)</div>
+              </div>
+              <div class="chart-body" style="padding: 10px 18px 16px">
+                <svg id="yearLineSvg" style="width: 100%; height: 200px; display: block"></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW 9 -->
+          <div class="secondary-panel" id="view-distribution">
+            <div class="panel-heading">Distribution of Games</div>
+            <div class="panel-sub">
+              Click any bar to filter all other charts to matching games. Click again to reset.
+            </div>
+            <div class="two-col">
+              <div class="chart-card">
+                <div class="chart-card-header"><div class="chart-card-title">By Genre</div></div>
+                <div class="chart-body"><div class="bar-list" id="bars-distgenre"></div></div>
+              </div>
+              <div class="chart-card">
+                <div class="chart-card-header"><div class="chart-card-title">By Playtime</div></div>
+                <div class="chart-body"><div class="bar-list" id="bars-distplaytime"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW 10 -->
+          <div class="secondary-panel" id="view-correlation">
+            <div class="panel-heading">Mechanics × Categories × Ratings</div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Mechanic × Category Heatmap</div>
+              </div>
+              <div class="chart-body">
+                <div class="heatmap-wrap">
+                  <table class="heatmap-table" id="heatmap-table"></table>
+                </div>
+              </div>
+            </div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">Top Mechanic–Category Combinations</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-correlation"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="tooltip" id="tooltip">
+      <div class="tt-name" id="tt-name"></div>
+      <div class="tt-row"><span class="tt-label">Rating</span><span class="tt-val" id="tt-rating"></span></div>
+      <div class="tt-row"><span class="tt-label">Genre</span><span class="tt-val" id="tt-genre"></span></div>
+      <div class="tt-row"><span class="tt-label">Votes</span><span class="tt-val" id="tt-votes"></span></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
