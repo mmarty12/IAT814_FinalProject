@@ -1,0 +1,42 @@
+[
+  {
+    "max_players": 1,
+    "avg": 7.3281,
+    "count": 67
+  },
+  {
+    "max_players": 2,
+    "avg": 6.9381,
+    "count": 1473
+  },
+  {
+    "max_players": 3,
+    "avg": 7.0029,
+    "count": 116
+  },
+  {
+    "max_players": 4,
+    "avg": 6.5124,
+    "count": 2317
+  },
+  {
+    "max_players": 5,
+    "avg": 6.4094,
+    "count": 1106
+  },
+  {
+    "max_players": 6,
+    "avg": 6.0791,
+    "count": 1394
+  },
+  {
+    "max_players": 7,
+    "avg": 6.3718,
+    "count": 130
+  },
+  {
+    "max_players": 8,
+    "avg": 6.041,
+    "count": 365
+  }
+]

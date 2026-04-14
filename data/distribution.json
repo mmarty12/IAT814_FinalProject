@@ -1,0 +1,1031 @@
+{
+  "categoryDist": [
+    {
+      "category": "Card Game",
+      "count": 1485
+    },
+    {
+      "category": "Abstract Strategy",
+      "count": 464
+    },
+    {
+      "category": "Economic",
+      "count": 423
+    },
+    {
+      "category": "Adventure",
+      "count": 401
+    },
+    {
+      "category": "Bluffing",
+      "count": 360
+    },
+    {
+      "category": "Action / Dexterity",
+      "count": 331
+    },
+    {
+      "category": "Animals",
+      "count": 316
+    },
+    {
+      "category": "Ancient",
+      "count": 292
+    },
+    {
+      "category": "Wargame",
+      "count": 282
+    },
+    {
+      "category": "Dice",
+      "count": 279
+    },
+    {
+      "category": "Fantasy",
+      "count": 201
+    },
+    {
+      "category": "City Building",
+      "count": 161
+    },
+    {
+      "category": "Children's Game",
+      "count": 131
+    },
+    {
+      "category": "Aviation / Flight",
+      "count": 127
+    },
+    {
+      "category": "Deduction",
+      "count": 118
+    },
+    {
+      "category": "Party Game",
+      "count": 109
+    },
+    {
+      "category": "Medieval",
+      "count": 103
+    },
+    {
+      "category": "Fighting",
+      "count": 99
+    },
+    {
+      "category": "Science Fiction",
+      "count": 93
+    },
+    {
+      "category": "American West",
+      "count": 86
+    },
+    {
+      "category": "Exploration",
+      "count": 79
+    },
+    {
+      "category": "Modern Warfare",
+      "count": 73
+    },
+    {
+      "category": "American Civil War",
+      "count": 71
+    },
+    {
+      "category": "Civilization",
+      "count": 69
+    },
+    {
+      "category": "Movies / TV / Radio theme",
+      "count": 65
+    },
+    {
+      "category": "Napoleonic",
+      "count": 62
+    },
+    {
+      "category": "Nautical",
+      "count": 60
+    },
+    {
+      "category": "Age of Reason",
+      "count": 55
+    },
+    {
+      "category": "Miniatures",
+      "count": 52
+    },
+    {
+      "category": "NA",
+      "count": 52
+    },
+    {
+      "category": "Humor",
+      "count": 49
+    },
+    {
+      "category": "Collectible Components",
+      "count": 48
+    },
+    {
+      "category": "Racing",
+      "count": 47
+    },
+    {
+      "category": "Horror",
+      "count": 46
+    },
+    {
+      "category": "Arabian",
+      "count": 36
+    },
+    {
+      "category": "Trains",
+      "count": 34
+    },
+    {
+      "category": "Negotiation",
+      "count": 30
+    }
+  ],
+  "playtimeDist": [
+    {
+      "label": "Under 30 min",
+      "count": 1308
+    },
+    {
+      "label": "30–60 min",
+      "count": 2394
+    },
+    {
+      "label": "1–2 hours",
+      "count": 1969
+    },
+    {
+      "label": "2–4 hours",
+      "count": 985
+    },
+    {
+      "label": "4+ hours",
+      "count": 461
+    }
+  ],
+  "cross": [
+    {
+      "category": "Action / Dexterity",
+      "playtime_bucket": "Under 30 min",
+      "count": 206
+    },
+    {
+      "category": "Card Game",
+      "playtime_bucket": "Under 30 min",
+      "count": 355
+    },
+    {
+      "category": "Movies / TV / Radio theme",
+      "playtime_bucket": "Under 30 min",
+      "count": 3
+    },
+    {
+      "category": "Animals",
+      "playtime_bucket": "Under 30 min",
+      "count": 112
+    },
+    {
+      "category": "Collectible Components",
+      "playtime_bucket": "Under 30 min",
+      "count": 4
+    },
+    {
+      "category": "Abstract Strategy",
+      "playtime_bucket": "Under 30 min",
+      "count": 200
+    },
+    {
+      "category": "Children's Game",
+      "playtime_bucket": "Under 30 min",
+      "count": 65
+    },
+    {
+      "category": "Ancient",
+      "playtime_bucket": "Under 30 min",
+      "count": 10
+    },
+    {
+      "category": "Adventure",
+      "playtime_bucket": "Under 30 min",
+      "count": 26
+    },
+    {
+      "category": "Dice",
+      "playtime_bucket": "Under 30 min",
+      "count": 87
+    },
+    {
+      "category": "Deduction",
+      "playtime_bucket": "Under 30 min",
+      "count": 21
+    },
+    {
+      "category": "Aviation / Flight",
+      "playtime_bucket": "Under 30 min",
+      "count": 17
+    },
+    {
+      "category": "American West",
+      "playtime_bucket": "Under 30 min",
+      "count": 8
+    },
+    {
+      "category": "Miniatures",
+      "playtime_bucket": "Under 30 min",
+      "count": 1
+    },
+    {
+      "category": "Bluffing",
+      "playtime_bucket": "Under 30 min",
+      "count": 81
+    },
+    {
+      "category": "Negotiation",
+      "playtime_bucket": "Under 30 min",
+      "count": 5
+    },
+    {
+      "category": "Fighting",
+      "playtime_bucket": "Under 30 min",
+      "count": 6
+    },
+    {
+      "category": "Fantasy",
+      "playtime_bucket": "Under 30 min",
+      "count": 4
+    },
+    {
+      "category": "Nautical",
+      "playtime_bucket": "Under 30 min",
+      "count": 1
+    },
+    {
+      "category": "Modern Warfare",
+      "playtime_bucket": "Under 30 min",
+      "count": 2
+    },
+    {
+      "category": "Party Game",
+      "playtime_bucket": "Under 30 min",
+      "count": 19
+    },
+    {
+      "category": "City Building",
+      "playtime_bucket": "Under 30 min",
+      "count": 8
+    },
+    {
+      "category": "Science Fiction",
+      "playtime_bucket": "Under 30 min",
+      "count": 1
+    },
+    {
+      "category": "Arabian",
+      "playtime_bucket": "Under 30 min",
+      "count": 2
+    },
+    {
+      "category": "NA",
+      "playtime_bucket": "Under 30 min",
+      "count": 9
+    },
+    {
+      "category": "Trains",
+      "playtime_bucket": "Under 30 min",
+      "count": 1
+    },
+    {
+      "category": "Humor",
+      "playtime_bucket": "Under 30 min",
+      "count": 4
+    },
+    {
+      "category": "Napoleonic",
+      "playtime_bucket": "Under 30 min",
+      "count": 2
+    },
+    {
+      "category": "Medieval",
+      "playtime_bucket": "Under 30 min",
+      "count": 1
+    },
+    {
+      "category": "Age of Reason",
+      "playtime_bucket": "Under 30 min",
+      "count": 1
+    },
+    {
+      "category": "Racing",
+      "playtime_bucket": "Under 30 min",
+      "count": 1
+    },
+    {
+      "category": "Card Game",
+      "playtime_bucket": "30–60 min",
+      "count": 751
+    },
+    {
+      "category": "Abstract Strategy",
+      "playtime_bucket": "30–60 min",
+      "count": 192
+    },
+    {
+      "category": "Dice",
+      "playtime_bucket": "30–60 min",
+      "count": 103
+    },
+    {
+      "category": "Animals",
+      "playtime_bucket": "30–60 min",
+      "count": 139
+    },
+    {
+      "category": "Action / Dexterity",
+      "playtime_bucket": "30–60 min",
+      "count": 90
+    },
+    {
+      "category": "Economic",
+      "playtime_bucket": "30–60 min",
+      "count": 45
+    },
+    {
+      "category": "Ancient",
+      "playtime_bucket": "30–60 min",
+      "count": 85
+    },
+    {
+      "category": "Bluffing",
+      "playtime_bucket": "30–60 min",
+      "count": 166
+    },
+    {
+      "category": "NA",
+      "playtime_bucket": "30–60 min",
+      "count": 23
+    },
+    {
+      "category": "Arabian",
+      "playtime_bucket": "30–60 min",
+      "count": 16
+    },
+    {
+      "category": "Party Game",
+      "playtime_bucket": "30–60 min",
+      "count": 50
+    },
+    {
+      "category": "Children's Game",
+      "playtime_bucket": "30–60 min",
+      "count": 46
+    },
+    {
+      "category": "Racing",
+      "playtime_bucket": "30–60 min",
+      "count": 13
+    },
+    {
+      "category": "Aviation / Flight",
+      "playtime_bucket": "30–60 min",
+      "count": 39
+    },
+    {
+      "category": "Deduction",
+      "playtime_bucket": "30–60 min",
+      "count": 42
+    },
+    {
+      "category": "American West",
+      "playtime_bucket": "30–60 min",
+      "count": 36
+    },
+    {
+      "category": "Trains",
+      "playtime_bucket": "30–60 min",
+      "count": 7
+    },
+    {
+      "category": "City Building",
+      "playtime_bucket": "30–60 min",
+      "count": 41
+    },
+    {
+      "category": "Adventure",
+      "playtime_bucket": "30–60 min",
+      "count": 96
+    },
+    {
+      "category": "Movies / TV / Radio theme",
+      "playtime_bucket": "30–60 min",
+      "count": 21
+    },
+    {
+      "category": "Science Fiction",
+      "playtime_bucket": "30–60 min",
+      "count": 17
+    },
+    {
+      "category": "Collectible Components",
+      "playtime_bucket": "30–60 min",
+      "count": 8
+    },
+    {
+      "category": "Fighting",
+      "playtime_bucket": "30–60 min",
+      "count": 20
+    },
+    {
+      "category": "Exploration",
+      "playtime_bucket": "30–60 min",
+      "count": 21
+    },
+    {
+      "category": "Nautical",
+      "playtime_bucket": "30–60 min",
+      "count": 11
+    },
+    {
+      "category": "Wargame",
+      "playtime_bucket": "30–60 min",
+      "count": 11
+    },
+    {
+      "category": "Horror",
+      "playtime_bucket": "30–60 min",
+      "count": 14
+    },
+    {
+      "category": "Miniatures",
+      "playtime_bucket": "30–60 min",
+      "count": 8
+    },
+    {
+      "category": "Napoleonic",
+      "playtime_bucket": "30–60 min",
+      "count": 4
+    },
+    {
+      "category": "Medieval",
+      "playtime_bucket": "30–60 min",
+      "count": 23
+    },
+    {
+      "category": "Fantasy",
+      "playtime_bucket": "30–60 min",
+      "count": 48
+    },
+    {
+      "category": "Humor",
+      "playtime_bucket": "30–60 min",
+      "count": 26
+    },
+    {
+      "category": "American Civil War",
+      "playtime_bucket": "30–60 min",
+      "count": 7
+    },
+    {
+      "category": "Age of Reason",
+      "playtime_bucket": "30–60 min",
+      "count": 6
+    },
+    {
+      "category": "Civilization",
+      "playtime_bucket": "30–60 min",
+      "count": 8
+    },
+    {
+      "category": "Negotiation",
+      "playtime_bucket": "30–60 min",
+      "count": 3
+    },
+    {
+      "category": "Abstract Strategy",
+      "playtime_bucket": "1–2 hours",
+      "count": 56
+    },
+    {
+      "category": "Ancient",
+      "playtime_bucket": "1–2 hours",
+      "count": 109
+    },
+    {
+      "category": "Fantasy",
+      "playtime_bucket": "1–2 hours",
+      "count": 82
+    },
+    {
+      "category": "Economic",
+      "playtime_bucket": "1–2 hours",
+      "count": 181
+    },
+    {
+      "category": "Card Game",
+      "playtime_bucket": "1–2 hours",
+      "count": 303
+    },
+    {
+      "category": "City Building",
+      "playtime_bucket": "1–2 hours",
+      "count": 72
+    },
+    {
+      "category": "Age of Reason",
+      "playtime_bucket": "1–2 hours",
+      "count": 16
+    },
+    {
+      "category": "Nautical",
+      "playtime_bucket": "1–2 hours",
+      "count": 17
+    },
+    {
+      "category": "Negotiation",
+      "playtime_bucket": "1–2 hours",
+      "count": 9
+    },
+    {
+      "category": "Science Fiction",
+      "playtime_bucket": "1–2 hours",
+      "count": 41
+    },
+    {
+      "category": "Bluffing",
+      "playtime_bucket": "1–2 hours",
+      "count": 74
+    },
+    {
+      "category": "Animals",
+      "playtime_bucket": "1–2 hours",
+      "count": 50
+    },
+    {
+      "category": "Exploration",
+      "playtime_bucket": "1–2 hours",
+      "count": 44
+    },
+    {
+      "category": "Trains",
+      "playtime_bucket": "1–2 hours",
+      "count": 17
+    },
+    {
+      "category": "Medieval",
+      "playtime_bucket": "1–2 hours",
+      "count": 49
+    },
+    {
+      "category": "American West",
+      "playtime_bucket": "1–2 hours",
+      "count": 30
+    },
+    {
+      "category": "Dice",
+      "playtime_bucket": "1–2 hours",
+      "count": 60
+    },
+    {
+      "category": "Deduction",
+      "playtime_bucket": "1–2 hours",
+      "count": 42
+    },
+    {
+      "category": "Adventure",
+      "playtime_bucket": "1–2 hours",
+      "count": 165
+    },
+    {
+      "category": "Aviation / Flight",
+      "playtime_bucket": "1–2 hours",
+      "count": 30
+    },
+    {
+      "category": "Racing",
+      "playtime_bucket": "1–2 hours",
+      "count": 19
+    },
+    {
+      "category": "Action / Dexterity",
+      "playtime_bucket": "1–2 hours",
+      "count": 16
+    },
+    {
+      "category": "Party Game",
+      "playtime_bucket": "1–2 hours",
+      "count": 34
+    },
+    {
+      "category": "Fighting",
+      "playtime_bucket": "1–2 hours",
+      "count": 41
+    },
+    {
+      "category": "Horror",
+      "playtime_bucket": "1–2 hours",
+      "count": 24
+    },
+    {
+      "category": "Collectible Components",
+      "playtime_bucket": "1–2 hours",
+      "count": 26
+    },
+    {
+      "category": "Movies / TV / Radio theme",
+      "playtime_bucket": "1–2 hours",
+      "count": 25
+    },
+    {
+      "category": "NA",
+      "playtime_bucket": "1–2 hours",
+      "count": 18
+    },
+    {
+      "category": "Wargame",
+      "playtime_bucket": "1–2 hours",
+      "count": 38
+    },
+    {
+      "category": "American Civil War",
+      "playtime_bucket": "1–2 hours",
+      "count": 10
+    },
+    {
+      "category": "Children's Game",
+      "playtime_bucket": "1–2 hours",
+      "count": 17
+    },
+    {
+      "category": "Miniatures",
+      "playtime_bucket": "1–2 hours",
+      "count": 14
+    },
+    {
+      "category": "Modern Warfare",
+      "playtime_bucket": "1–2 hours",
+      "count": 15
+    },
+    {
+      "category": "Napoleonic",
+      "playtime_bucket": "1–2 hours",
+      "count": 6
+    },
+    {
+      "category": "Arabian",
+      "playtime_bucket": "1–2 hours",
+      "count": 12
+    },
+    {
+      "category": "Humor",
+      "playtime_bucket": "1–2 hours",
+      "count": 16
+    },
+    {
+      "category": "Civilization",
+      "playtime_bucket": "1–2 hours",
+      "count": 24
+    },
+    {
+      "category": "Civilization",
+      "playtime_bucket": "2–4 hours",
+      "count": 26
+    },
+    {
+      "category": "Negotiation",
+      "playtime_bucket": "2–4 hours",
+      "count": 9
+    },
+    {
+      "category": "Miniatures",
+      "playtime_bucket": "2–4 hours",
+      "count": 19
+    },
+    {
+      "category": "Fantasy",
+      "playtime_bucket": "2–4 hours",
+      "count": 53
+    },
+    {
+      "category": "Bluffing",
+      "playtime_bucket": "2–4 hours",
+      "count": 25
+    },
+    {
+      "category": "Adventure",
+      "playtime_bucket": "2–4 hours",
+      "count": 97
+    },
+    {
+      "category": "Abstract Strategy",
+      "playtime_bucket": "2–4 hours",
+      "count": 5
+    },
+    {
+      "category": "Aviation / Flight",
+      "playtime_bucket": "2–4 hours",
+      "count": 25
+    },
+    {
+      "category": "American Civil War",
+      "playtime_bucket": "2–4 hours",
+      "count": 30
+    },
+    {
+      "category": "Deduction",
+      "playtime_bucket": "2–4 hours",
+      "count": 11
+    },
+    {
+      "category": "Exploration",
+      "playtime_bucket": "2–4 hours",
+      "count": 9
+    },
+    {
+      "category": "Economic",
+      "playtime_bucket": "2–4 hours",
+      "count": 142
+    },
+    {
+      "category": "Racing",
+      "playtime_bucket": "2–4 hours",
+      "count": 13
+    },
+    {
+      "category": "Wargame",
+      "playtime_bucket": "2–4 hours",
+      "count": 95
+    },
+    {
+      "category": "Ancient",
+      "playtime_bucket": "2–4 hours",
+      "count": 53
+    },
+    {
+      "category": "City Building",
+      "playtime_bucket": "2–4 hours",
+      "count": 34
+    },
+    {
+      "category": "Science Fiction",
+      "playtime_bucket": "2–4 hours",
+      "count": 21
+    },
+    {
+      "category": "Age of Reason",
+      "playtime_bucket": "2–4 hours",
+      "count": 20
+    },
+    {
+      "category": "Fighting",
+      "playtime_bucket": "2–4 hours",
+      "count": 25
+    },
+    {
+      "category": "Horror",
+      "playtime_bucket": "2–4 hours",
+      "count": 7
+    },
+    {
+      "category": "Animals",
+      "playtime_bucket": "2–4 hours",
+      "count": 9
+    },
+    {
+      "category": "Card Game",
+      "playtime_bucket": "2–4 hours",
+      "count": 49
+    },
+    {
+      "category": "American West",
+      "playtime_bucket": "2–4 hours",
+      "count": 9
+    },
+    {
+      "category": "Dice",
+      "playtime_bucket": "2–4 hours",
+      "count": 19
+    },
+    {
+      "category": "Nautical",
+      "playtime_bucket": "2–4 hours",
+      "count": 18
+    },
+    {
+      "category": "Arabian",
+      "playtime_bucket": "2–4 hours",
+      "count": 5
+    },
+    {
+      "category": "Movies / TV / Radio theme",
+      "playtime_bucket": "2–4 hours",
+      "count": 11
+    },
+    {
+      "category": "Napoleonic",
+      "playtime_bucket": "2–4 hours",
+      "count": 24
+    },
+    {
+      "category": "Children's Game",
+      "playtime_bucket": "2–4 hours",
+      "count": 2
+    },
+    {
+      "category": "Modern Warfare",
+      "playtime_bucket": "2–4 hours",
+      "count": 25
+    },
+    {
+      "category": "Collectible Components",
+      "playtime_bucket": "2–4 hours",
+      "count": 5
+    },
+    {
+      "category": "Trains",
+      "playtime_bucket": "2–4 hours",
+      "count": 8
+    },
+    {
+      "category": "Action / Dexterity",
+      "playtime_bucket": "2–4 hours",
+      "count": 4
+    },
+    {
+      "category": "Medieval",
+      "playtime_bucket": "2–4 hours",
+      "count": 15
+    },
+    {
+      "category": "Humor",
+      "playtime_bucket": "2–4 hours",
+      "count": 1
+    },
+    {
+      "category": "NA",
+      "playtime_bucket": "2–4 hours",
+      "count": 1
+    },
+    {
+      "category": "Party Game",
+      "playtime_bucket": "2–4 hours",
+      "count": 1
+    },
+    {
+      "category": "Economic",
+      "playtime_bucket": "4+ hours",
+      "count": 50
+    },
+    {
+      "category": "Adventure",
+      "playtime_bucket": "4+ hours",
+      "count": 13
+    },
+    {
+      "category": "Civilization",
+      "playtime_bucket": "4+ hours",
+      "count": 11
+    },
+    {
+      "category": "Wargame",
+      "playtime_bucket": "4+ hours",
+      "count": 123
+    },
+    {
+      "category": "American Civil War",
+      "playtime_bucket": "4+ hours",
+      "count": 23
+    },
+    {
+      "category": "Fantasy",
+      "playtime_bucket": "4+ hours",
+      "count": 8
+    },
+    {
+      "category": "Bluffing",
+      "playtime_bucket": "4+ hours",
+      "count": 9
+    },
+    {
+      "category": "Medieval",
+      "playtime_bucket": "4+ hours",
+      "count": 14
+    },
+    {
+      "category": "American West",
+      "playtime_bucket": "4+ hours",
+      "count": 2
+    },
+    {
+      "category": "Science Fiction",
+      "playtime_bucket": "4+ hours",
+      "count": 9
+    },
+    {
+      "category": "Napoleonic",
+      "playtime_bucket": "4+ hours",
+      "count": 22
+    },
+    {
+      "category": "Age of Reason",
+      "playtime_bucket": "4+ hours",
+      "count": 12
+    },
+    {
+      "category": "City Building",
+      "playtime_bucket": "4+ hours",
+      "count": 6
+    },
+    {
+      "category": "Nautical",
+      "playtime_bucket": "4+ hours",
+      "count": 12
+    },
+    {
+      "category": "Exploration",
+      "playtime_bucket": "4+ hours",
+      "count": 4
+    },
+    {
+      "category": "Ancient",
+      "playtime_bucket": "4+ hours",
+      "count": 35
+    },
+    {
+      "category": "Modern Warfare",
+      "playtime_bucket": "4+ hours",
+      "count": 30
+    },
+    {
+      "category": "Aviation / Flight",
+      "playtime_bucket": "4+ hours",
+      "count": 14
+    },
+    {
+      "category": "Arabian",
+      "playtime_bucket": "4+ hours",
+      "count": 1
+    },
+    {
+      "category": "Horror",
+      "playtime_bucket": "4+ hours",
+      "count": 1
+    },
+    {
+      "category": "Humor",
+      "playtime_bucket": "4+ hours",
+      "count": 1
+    },
+    {
+      "category": "Fighting",
+      "playtime_bucket": "4+ hours",
+      "count": 4
+    },
+    {
+      "category": "Dice",
+      "playtime_bucket": "4+ hours",
+      "count": 3
+    },
+    {
+      "category": "Trains",
+      "playtime_bucket": "4+ hours",
+      "count": 1
+    },
+    {
+      "category": "Miniatures",
+      "playtime_bucket": "4+ hours",
+      "count": 5
+    },
+    {
+      "category": "Card Game",
+      "playtime_bucket": "4+ hours",
+      "count": 3
+    },
+    {
+      "category": "Animals",
+      "playtime_bucket": "4+ hours",
+      "count": 4
+    },
+    {
+      "category": "Movies / TV / Radio theme",
+      "playtime_bucket": "4+ hours",
+      "count": 2
+    },
+    {
+      "category": "Negotiation",
+      "playtime_bucket": "4+ hours",
+      "count": 4
+    },
+    {
+      "category": "Action / Dexterity",
+      "playtime_bucket": "4+ hours",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Under 30 min",
+    "avg": 6.1276,
+    "count": 1308
+  },
+  {
+    "label": "30–60 min",
+    "avg": 6.3427,
+    "count": 2394
+  },
+  {
+    "label": "1–2 hours",
+    "avg": 6.5578,
+    "count": 1969
+  },
+  {
+    "label": "2–4 hours",
+    "avg": 6.8794,
+    "count": 985
+  },
+  {
+    "label": "4+ hours",
+    "avg": 7.1081,
+    "count": 461
+  }
+]

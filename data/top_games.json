@@ -1,0 +1,2804 @@
+[
+  {
+    "name": "Small World Designer Edition",
+    "rating": 9.0039,
+    "votes": 180,
+    "year": 2015,
+    "primaryGenre": "Civilization",
+    "genres": [
+      "Civilization",
+      "Fantasy",
+      "Territory Building"
+    ],
+    "playing_time": 80,
+    "max_players": 4
+  },
+  {
+    "name": "Kingdom Death: Monster",
+    "rating": 8.9318,
+    "votes": 1954,
+    "year": 2015,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Horror",
+      "Mature / Adult",
+      "Miniatures",
+      "Mythology"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Terra Mystica: Big Box",
+    "rating": 8.8486,
+    "votes": 109,
+    "year": 2015,
+    "primaryGenre": "Civilization",
+    "genres": [
+      "Civilization",
+      "Economic",
+      "Fantasy",
+      "Territory Building"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Enemy Action: Ardennes",
+    "rating": 8.758,
+    "votes": 187,
+    "year": 2015,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 600,
+    "max_players": 0
+  },
+  {
+    "name": "Through the Ages: A New Story of Civilization",
+    "rating": 8.7424,
+    "votes": 6888,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Civilization",
+      "Economic"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "1817",
+    "rating": 8.7085,
+    "votes": 165,
+    "year": 2010,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Trains",
+      "Transportation"
+    ],
+    "playing_time": 540,
+    "max_players": 0
+  },
+  {
+    "name": "Pandemic Legacy: Season 1",
+    "rating": 8.6688,
+    "votes": 17251,
+    "year": 2015,
+    "primaryGenre": "Environmental",
+    "genres": [
+      "Environmental",
+      "Medical"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "War of the Ring Collector's Edition",
+    "rating": 8.6119,
+    "votes": 1018,
+    "year": 2010,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Dice",
+      "Fantasy",
+      "Miniatures",
+      "Novel-based",
+      "Territory Building",
+      "Wargame"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "La Bataille de la Moscowa (third edition)",
+    "rating": 8.6021,
+    "votes": 111,
+    "year": 2011,
+    "primaryGenre": "Napoleonic",
+    "genres": [
+      "Napoleonic",
+      "Wargame"
+    ],
+    "playing_time": 1000,
+    "max_players": 0
+  },
+  {
+    "name": "Star Wars: Rebellion",
+    "rating": 8.5448,
+    "votes": 8142,
+    "year": 2016,
+    "primaryGenre": "Dice",
+    "genres": [
+      "Dice",
+      "Fighting",
+      "Movies / TV / Radio theme",
+      "Science Fiction",
+      "Wargame"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Puerto Rico: Limited Anniversary Edition",
+    "rating": 8.517,
+    "votes": 3369,
+    "year": 2011,
+    "primaryGenre": "City Building",
+    "genres": [
+      "City Building",
+      "Economic",
+      "Farming"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Advanced Squad Leader: Starter Kit Historical Module 1 – Decision at Elst",
+    "rating": 8.4782,
+    "votes": 110,
+    "year": 2014,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 0,
+    "max_players": 12
+  },
+  {
+    "name": "Vinhos Deluxe Edition",
+    "rating": 8.4773,
+    "votes": 796,
+    "year": 2016,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Industry / Manufacturing"
+    ],
+    "playing_time": 135,
+    "max_players": 2
+  },
+  {
+    "name": "Codex: Card-Time Strategy – Deluxe Set",
+    "rating": 8.4715,
+    "votes": 531,
+    "year": 2016,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fantasy",
+      "Fighting",
+      "Video Game Theme"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "Viticulture: Complete Collector's Edition",
+    "rating": 8.4601,
+    "votes": 620,
+    "year": 2014,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Farming"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "The U.S. Civil War",
+    "rating": 8.4526,
+    "votes": 316,
+    "year": 2015,
+    "primaryGenre": "American Civil War",
+    "genres": [
+      "American Civil War",
+      "Wargame"
+    ],
+    "playing_time": 360,
+    "max_players": 1
+  },
+  {
+    "name": "Agricola (revised edition)",
+    "rating": 8.425,
+    "votes": 925,
+    "year": 2016,
+    "primaryGenre": "Animals",
+    "genres": [
+      "Animals",
+      "Economic",
+      "Farming"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Arkham Horror: The Card Game",
+    "rating": 8.4219,
+    "votes": 4998,
+    "year": 2016,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Card Game",
+      "Collectible Components",
+      "Fantasy",
+      "Horror",
+      "Novel-based"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Axis Empires: Totaler Krieg!",
+    "rating": 8.4194,
+    "votes": 188,
+    "year": 2011,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 3600,
+    "max_players": 0
+  },
+  {
+    "name": "Stonewall Jackson's Way II",
+    "rating": 8.4192,
+    "votes": 130,
+    "year": 2013,
+    "primaryGenre": "American Civil War",
+    "genres": [
+      "American Civil War",
+      "Wargame"
+    ],
+    "playing_time": 0,
+    "max_players": 13
+  },
+  {
+    "name": "Dawn of the Zeds (Third edition)",
+    "rating": 8.4138,
+    "votes": 381,
+    "year": 2016,
+    "primaryGenre": "Horror",
+    "genres": [
+      "Horror",
+      "Zombies"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Comanchería: The Rise and Fall of the Comanche Empire",
+    "rating": 8.4118,
+    "votes": 143,
+    "year": 2016,
+    "primaryGenre": "American Indian Wars",
+    "genres": [
+      "American Indian Wars",
+      "American West",
+      "Wargame"
+    ],
+    "playing_time": 360,
+    "max_players": 1
+  },
+  {
+    "name": "Orléans: Deluxe Edition",
+    "rating": 8.393,
+    "votes": 1076,
+    "year": 2015,
+    "primaryGenre": "Medieval",
+    "genres": [
+      "Medieval",
+      "Religious",
+      "Travel"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "Blood Bowl (2016 edition)",
+    "rating": 8.3925,
+    "votes": 632,
+    "year": 2016,
+    "primaryGenre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Fighting",
+      "Miniatures",
+      "Sports"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Mega Civilization",
+    "rating": 8.3868,
+    "votes": 550,
+    "year": 2015,
+    "primaryGenre": "Ancient",
+    "genres": [
+      "Ancient",
+      "Civilization",
+      "Economic",
+      "Negotiation"
+    ],
+    "playing_time": 720,
+    "max_players": 0
+  },
+  {
+    "name": "War of the Ring (Second Edition)",
+    "rating": 8.3842,
+    "votes": 6312,
+    "year": 2012,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Dice",
+      "Fantasy",
+      "Miniatures",
+      "Novel-based",
+      "Territory Building"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Triumph & Tragedy",
+    "rating": 8.3836,
+    "votes": 857,
+    "year": 2015,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Negotiation",
+      "Political",
+      "Territory Building",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Waterloo 1815: Fallen Eagles",
+    "rating": 8.3811,
+    "votes": 106,
+    "year": 2015,
+    "primaryGenre": "Napoleonic",
+    "genres": [
+      "Napoleonic",
+      "Wargame"
+    ],
+    "playing_time": 720,
+    "max_players": 0
+  },
+  {
+    "name": "Terraforming Mars",
+    "rating": 8.3806,
+    "votes": 8126,
+    "year": 2016,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Environmental",
+      "Industry / Manufacturing",
+      "Science Fiction",
+      "Territory Building"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Mechs vs. Minions",
+    "rating": 8.3755,
+    "votes": 4602,
+    "year": 2016,
+    "primaryGenre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Fighting",
+      "Miniatures",
+      "Video Game Theme"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "1844: Switzerland",
+    "rating": 8.3711,
+    "votes": 164,
+    "year": 2003,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Trains"
+    ],
+    "playing_time": 300,
+    "max_players": 2
+  },
+  {
+    "name": "El Grande Big Box",
+    "rating": 8.3687,
+    "votes": 986,
+    "year": 2015,
+    "primaryGenre": "Renaissance",
+    "genres": [
+      "Renaissance"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "Malifaux (second edition)",
+    "rating": 8.3606,
+    "votes": 265,
+    "year": 2013,
+    "primaryGenre": "Collectible Components",
+    "genres": [
+      "Collectible Components",
+      "Fantasy",
+      "Horror",
+      "Miniatures",
+      "Science Fiction"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Twilight Struggle",
+    "rating": 8.358,
+    "votes": 27008,
+    "year": 2005,
+    "primaryGenre": "Modern Warfare",
+    "genres": [
+      "Modern Warfare",
+      "Political",
+      "Wargame"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Crusade and Revolution: The Spanish Civil War, 1936-1939",
+    "rating": 8.3549,
+    "votes": 193,
+    "year": 2013,
+    "primaryGenre": "Civil War",
+    "genres": [
+      "Civil War",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 300,
+    "max_players": 2
+  },
+  {
+    "name": "Dungeon Lords: Happy Anniversary",
+    "rating": 8.3545,
+    "votes": 573,
+    "year": 2014,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Economic",
+      "Fantasy",
+      "Fighting",
+      "Humor"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "Pathfinder Adventure Card Game: Mummy's Mask – Base Set",
+    "rating": 8.3451,
+    "votes": 122,
+    "year": 2016,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fantasy",
+      "Fighting"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Unconditional Surrender! World War 2 in Europe",
+    "rating": 8.344,
+    "votes": 352,
+    "year": 2014,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 3000,
+    "max_players": 0
+  },
+  {
+    "name": "Summoner Wars: Alliances Master Set",
+    "rating": 8.339,
+    "votes": 935,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fantasy",
+      "Fighting"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "El Grande Decennial Edition",
+    "rating": 8.3377,
+    "votes": 507,
+    "year": 2006,
+    "primaryGenre": "Medieval",
+    "genres": [
+      "Medieval",
+      "Political"
+    ],
+    "playing_time": 90,
+    "max_players": 3
+  },
+  {
+    "name": "Conflict of Heroes: Guadalcanal – The Pacific 1942",
+    "rating": 8.3361,
+    "votes": 147,
+    "year": 2016,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Where Eagles Dare",
+    "rating": 8.3341,
+    "votes": 136,
+    "year": 2011,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 2400,
+    "max_players": 0
+  },
+  {
+    "name": "Scythe",
+    "rating": 8.3335,
+    "votes": 14817,
+    "year": 2016,
+    "primaryGenre": "Civilization",
+    "genres": [
+      "Civilization",
+      "Economic",
+      "Fighting",
+      "Science Fiction",
+      "Territory Building"
+    ],
+    "playing_time": 115,
+    "max_players": 2
+  },
+  {
+    "name": "Ticket to Ride: 10th Anniversary",
+    "rating": 8.3274,
+    "votes": 3625,
+    "year": 2014,
+    "primaryGenre": "Trains",
+    "genres": [
+      "Trains",
+      "Travel"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Pyramid Arcade",
+    "rating": 8.3232,
+    "votes": 248,
+    "year": 2016,
+    "primaryGenre": "Abstract Strategy",
+    "genres": [
+      "Abstract Strategy",
+      "Animals",
+      "Dice",
+      "Game System",
+      "Science Fiction",
+      "Space Exploration"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Mansions of Madness: Second Edition",
+    "rating": 8.3166,
+    "votes": 6245,
+    "year": 2016,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Exploration",
+      "Fantasy",
+      "Fighting",
+      "Horror",
+      "Miniatures",
+      "Murder/Mystery",
+      "Puzzle"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Tak",
+    "rating": 8.3132,
+    "votes": 437,
+    "year": 2016,
+    "primaryGenre": "Abstract Strategy",
+    "genres": [
+      "Abstract Strategy"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "V-Commandos",
+    "rating": 8.3113,
+    "votes": 281,
+    "year": 2016,
+    "primaryGenre": "Spies/Secret Agents",
+    "genres": [
+      "Spies/Secret Agents",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Funkenschlag: EnBW",
+    "rating": 8.3077,
+    "votes": 165,
+    "year": 2007,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Industry / Manufacturing"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "18OE: On the Rails of the Orient Express",
+    "rating": 8.2996,
+    "votes": 174,
+    "year": 2014,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Trains",
+      "Transportation"
+    ],
+    "playing_time": 720,
+    "max_players": 0
+  },
+  {
+    "name": "A Feast for Odin",
+    "rating": 8.2979,
+    "votes": 3691,
+    "year": 2016,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Industry / Manufacturing",
+      "Medieval",
+      "Puzzle"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Terra Mystica",
+    "rating": 8.292,
+    "votes": 23684,
+    "year": 2012,
+    "primaryGenre": "Civilization",
+    "genres": [
+      "Civilization",
+      "Economic",
+      "Fantasy",
+      "Territory Building"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "BattleCON: Fate of Indines",
+    "rating": 8.2889,
+    "votes": 369,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fighting",
+      "Print & Play"
+    ],
+    "playing_time": 15,
+    "max_players": 7
+  },
+  {
+    "name": "Food Chain Magnate",
+    "rating": 8.2821,
+    "votes": 4965,
+    "year": 2015,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Industry / Manufacturing"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Hoplomachus: Rise of Rome",
+    "rating": 8.2813,
+    "votes": 107,
+    "year": 2013,
+    "primaryGenre": "Dice",
+    "genres": [
+      "Dice",
+      "Fighting"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "Guild Ball",
+    "rating": 8.2789,
+    "votes": 217,
+    "year": 2015,
+    "primaryGenre": "Medieval",
+    "genres": [
+      "Medieval",
+      "Miniatures",
+      "Sports",
+      "Wargame"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "D-Day at Tarawa",
+    "rating": 8.2753,
+    "votes": 184,
+    "year": 2014,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 0,
+    "max_players": 15
+  },
+  {
+    "name": "Galaxy Trucker: Anniversary Edition",
+    "rating": 8.2714,
+    "votes": 2300,
+    "year": 2012,
+    "primaryGenre": "Real-time",
+    "genres": [
+      "Real-time",
+      "Science Fiction",
+      "Space Exploration",
+      "Transportation"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Great Western Trail",
+    "rating": 8.2677,
+    "votes": 4782,
+    "year": 2016,
+    "primaryGenre": "American West",
+    "genres": [
+      "American West"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Skull Tales",
+    "rating": 8.2588,
+    "votes": 164,
+    "year": 2015,
+    "primaryGenre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Fighting",
+      "Miniatures",
+      "Nautical",
+      "Pirates"
+    ],
+    "playing_time": 0,
+    "max_players": 12
+  },
+  {
+    "name": "1844/1854",
+    "rating": 8.2571,
+    "votes": 129,
+    "year": 2016,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Trains"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Dominion (Second Edition)",
+    "rating": 8.2508,
+    "votes": 305,
+    "year": 2016,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Medieval"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "DAK2",
+    "rating": 8.2378,
+    "votes": 247,
+    "year": 2004,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 360,
+    "max_players": 1
+  },
+  {
+    "name": "Pandemic Iberia",
+    "rating": 8.2355,
+    "votes": 1635,
+    "year": 2016,
+    "primaryGenre": "Medical",
+    "genres": [
+      "Medical"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "Band of Brothers:  Ghost Panzer",
+    "rating": 8.2305,
+    "votes": 230,
+    "year": 2013,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 90,
+    "max_players": 3
+  },
+  {
+    "name": "D-Day at Omaha Beach",
+    "rating": 8.2291,
+    "votes": 961,
+    "year": 2009,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 480,
+    "max_players": 0
+  },
+  {
+    "name": "1880: China",
+    "rating": 8.2197,
+    "votes": 178,
+    "year": 2010,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Trains"
+    ],
+    "playing_time": 300,
+    "max_players": 2
+  },
+  {
+    "name": "Allegiance: A Realm Divided",
+    "rating": 8.2182,
+    "votes": 198,
+    "year": 2015,
+    "primaryGenre": "Fantasy",
+    "genres": [
+      "Fantasy"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Fields of Arle",
+    "rating": 8.2135,
+    "votes": 3492,
+    "year": 2014,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Farming",
+      "Industry / Manufacturing"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Star Wars: Imperial Assault",
+    "rating": 8.2048,
+    "votes": 11017,
+    "year": 2014,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Fighting",
+      "Miniatures",
+      "Movies / TV / Radio theme",
+      "Science Fiction",
+      "Wargame"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Viticulture Essential Edition",
+    "rating": 8.2005,
+    "votes": 5048,
+    "year": 2015,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Farming"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "7 Wonders Duel",
+    "rating": 8.1939,
+    "votes": 20088,
+    "year": 2015,
+    "primaryGenre": "Ancient",
+    "genres": [
+      "Ancient",
+      "Card Game",
+      "City Building",
+      "Civilization"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "Aeon's End",
+    "rating": 8.1934,
+    "votes": 1173,
+    "year": 2016,
+    "primaryGenre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Science Fiction"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Whistling Death",
+    "rating": 8.1893,
+    "votes": 229,
+    "year": 2003,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Case Blue",
+    "rating": 8.1837,
+    "votes": 250,
+    "year": 2007,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 0,
+    "max_players": 20
+  },
+  {
+    "name": "Caverna: The Cave Farmers",
+    "rating": 8.1815,
+    "votes": 16798,
+    "year": 2013,
+    "primaryGenre": "Animals",
+    "genres": [
+      "Animals",
+      "Economic",
+      "Fantasy",
+      "Farming"
+    ],
+    "playing_time": 210,
+    "max_players": 2
+  },
+  {
+    "name": "Fallen",
+    "rating": 8.1809,
+    "votes": 409,
+    "year": 2014,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Dice",
+      "Exploration",
+      "Fantasy"
+    ],
+    "playing_time": 90,
+    "max_players": 3
+  },
+  {
+    "name": "The Devil's Cauldron: The Battles for Arnhem and Nijmegen",
+    "rating": 8.1781,
+    "votes": 370,
+    "year": 2008,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 2400,
+    "max_players": 0
+  },
+  {
+    "name": "Carson City: Big Box",
+    "rating": 8.1759,
+    "votes": 783,
+    "year": 2015,
+    "primaryGenre": "American West",
+    "genres": [
+      "American West",
+      "City Building",
+      "Economic"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Thunderbolt Apache Leader",
+    "rating": 8.1736,
+    "votes": 781,
+    "year": 2012,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Modern Warfare",
+      "Wargame"
+    ],
+    "playing_time": 90,
+    "max_players": 3
+  },
+  {
+    "name": "The Walking Dead: All Out War",
+    "rating": 8.171,
+    "votes": 212,
+    "year": 2016,
+    "primaryGenre": "Comic Book / Strip",
+    "genres": [
+      "Comic Book / Strip",
+      "Miniatures",
+      "Zombies"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Star Wars: X-Wing Miniatures Game – The Force Awakens Core Set",
+    "rating": 8.1673,
+    "votes": 1363,
+    "year": 2015,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Collectible Components",
+      "Miniatures",
+      "Movies / TV / Radio theme",
+      "Science Fiction",
+      "Wargame"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "1862: Railway Mania in the Eastern Counties",
+    "rating": 8.1651,
+    "votes": 193,
+    "year": 2013,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Trains"
+    ],
+    "playing_time": 300,
+    "max_players": 2
+  },
+  {
+    "name": "Blood Rage",
+    "rating": 8.1584,
+    "votes": 13352,
+    "year": 2015,
+    "primaryGenre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Fighting",
+      "Miniatures",
+      "Mythology"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "Star Wars: Destiny",
+    "rating": 8.1523,
+    "votes": 1658,
+    "year": 2016,
+    "primaryGenre": "Collectible Components",
+    "genres": [
+      "Collectible Components",
+      "Dice",
+      "Fighting",
+      "Movies / TV / Radio theme",
+      "Science Fiction"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "Power Grid Deluxe: Europe/North America",
+    "rating": 8.1488,
+    "votes": 2024,
+    "year": 2014,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Industry / Manufacturing"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Pax Renaissance",
+    "rating": 8.1406,
+    "votes": 417,
+    "year": 2016,
+    "primaryGenre": "Renaissance",
+    "genres": [
+      "Renaissance"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Mage Knight Board Game",
+    "rating": 8.1379,
+    "votes": 18160,
+    "year": 2011,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Exploration",
+      "Fantasy",
+      "Fighting"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Liberty Roads",
+    "rating": 8.1327,
+    "votes": 399,
+    "year": 2009,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 960,
+    "max_players": 0
+  },
+  {
+    "name": "Dead of Winter: The Long Night",
+    "rating": 8.1317,
+    "votes": 2107,
+    "year": 2016,
+    "primaryGenre": "Bluffing",
+    "genres": [
+      "Bluffing",
+      "Deduction",
+      "Horror",
+      "Mature / Adult",
+      "Science Fiction",
+      "Zombies"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Liberty or Death: The American Insurrection",
+    "rating": 8.1302,
+    "votes": 592,
+    "year": 2016,
+    "primaryGenre": "American Revolutionary War",
+    "genres": [
+      "American Revolutionary War",
+      "Political",
+      "Wargame"
+    ],
+    "playing_time": 360,
+    "max_players": 1
+  },
+  {
+    "name": "Falling Sky: The Gallic Revolt Against Caesar",
+    "rating": 8.1283,
+    "votes": 604,
+    "year": 2016,
+    "primaryGenre": "Ancient",
+    "genres": [
+      "Ancient",
+      "Wargame"
+    ],
+    "playing_time": 360,
+    "max_players": 1
+  },
+  {
+    "name": "Conflict of Heroes: Awakening the Bear! (second edition)",
+    "rating": 8.1273,
+    "votes": 1135,
+    "year": 2012,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Exceed: Red Horizon – Reese & Heidi vs. Vincent & Nehtali",
+    "rating": 8.1211,
+    "votes": 142,
+    "year": 2016,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fighting"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "Ascension: Year Two Collector's Edition",
+    "rating": 8.1176,
+    "votes": 104,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fantasy"
+    ],
+    "playing_time": 0,
+    "max_players": 10
+  },
+  {
+    "name": "Hoplomachus: Origins",
+    "rating": 8.1141,
+    "votes": 131,
+    "year": 2015,
+    "primaryGenre": "Dice",
+    "genres": [
+      "Dice",
+      "Fighting",
+      "Wargame"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "Shadows of Brimstone: Swamps of Death",
+    "rating": 8.1127,
+    "votes": 1428,
+    "year": 2014,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "American West",
+      "Dice",
+      "Exploration",
+      "Horror",
+      "Miniatures"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "The Castles of Burgundy",
+    "rating": 8.1121,
+    "votes": 24876,
+    "year": 2011,
+    "primaryGenre": "Dice",
+    "genres": [
+      "Dice",
+      "Medieval",
+      "Territory Building"
+    ],
+    "playing_time": 90,
+    "max_players": 4
+  },
+  {
+    "name": "BattleCON: Devastation of Indines",
+    "rating": 8.1106,
+    "votes": 2159,
+    "year": 2013,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fighting"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "Frostgrave",
+    "rating": 8.1054,
+    "votes": 269,
+    "year": 2015,
+    "primaryGenre": "Dice",
+    "genres": [
+      "Dice",
+      "Fantasy",
+      "Fighting",
+      "Miniatures"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Combat Commander: Pacific",
+    "rating": 8.099,
+    "votes": 1244,
+    "year": 2008,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Infinity",
+    "rating": 8.097,
+    "votes": 534,
+    "year": 2005,
+    "primaryGenre": "Book",
+    "genres": [
+      "Book",
+      "Fighting",
+      "Miniatures",
+      "Science Fiction"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Conan",
+    "rating": 8.0944,
+    "votes": 1547,
+    "year": 2016,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Fighting",
+      "Miniatures",
+      "Novel-based"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Battle Above the Clouds",
+    "rating": 8.0937,
+    "votes": 195,
+    "year": 2010,
+    "primaryGenre": "American Civil War",
+    "genres": [
+      "American Civil War",
+      "Wargame"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Virgin Queen",
+    "rating": 8.0935,
+    "votes": 1196,
+    "year": 2012,
+    "primaryGenre": "Negotiation",
+    "genres": [
+      "Negotiation",
+      "Pike and Shot",
+      "Political",
+      "Religious",
+      "Renaissance",
+      "Wargame"
+    ],
+    "playing_time": 420,
+    "max_players": 1
+  },
+  {
+    "name": "Carcassonne Big Box 5",
+    "rating": 8.0933,
+    "votes": 919,
+    "year": 2014,
+    "primaryGenre": "City Building",
+    "genres": [
+      "City Building",
+      "Medieval"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "Puerto Rico",
+    "rating": 8.0916,
+    "votes": 47789,
+    "year": 2002,
+    "primaryGenre": "City Building",
+    "genres": [
+      "City Building",
+      "Economic",
+      "Farming"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Three Kingdoms Redux",
+    "rating": 8.0905,
+    "votes": 384,
+    "year": 2014,
+    "primaryGenre": "Ancient",
+    "genres": [
+      "Ancient",
+      "Civilization",
+      "Economic",
+      "Novel-based",
+      "Territory Building"
+    ],
+    "playing_time": 165,
+    "max_players": 2
+  },
+  {
+    "name": "Fire in the Lake",
+    "rating": 8.0905,
+    "votes": 1345,
+    "year": 2014,
+    "primaryGenre": "Modern Warfare",
+    "genres": [
+      "Modern Warfare",
+      "Political",
+      "Vietnam War",
+      "Wargame"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Through the Ages: A Story of Civilization",
+    "rating": 8.0902,
+    "votes": 15337,
+    "year": 2006,
+    "primaryGenre": "City Building",
+    "genres": [
+      "City Building",
+      "Civilization",
+      "Economic"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Baseball Highlights: 2045 – Super Deluxe Edition",
+    "rating": 8.0897,
+    "votes": 308,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Science Fiction",
+      "Sports"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Warfighter: The WWII Tactical Combat Card Game",
+    "rating": 8.0865,
+    "votes": 170,
+    "year": 2016,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "Plague Inc: The Board Game",
+    "rating": 8.0847,
+    "votes": 755,
+    "year": 2016,
+    "primaryGenre": "Medical",
+    "genres": [
+      "Medical",
+      "Video Game Theme"
+    ],
+    "playing_time": 75,
+    "max_players": 4
+  },
+  {
+    "name": "Santorini",
+    "rating": 8.0823,
+    "votes": 4444,
+    "year": 2016,
+    "primaryGenre": "Abstract Strategy",
+    "genres": [
+      "Abstract Strategy",
+      "Ancient",
+      "Mythology"
+    ],
+    "playing_time": 20,
+    "max_players": 6
+  },
+  {
+    "name": "Phantom Leader Deluxe",
+    "rating": 8.081,
+    "votes": 250,
+    "year": 2013,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Vietnam War",
+      "Wargame"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "Savage Worlds",
+    "rating": 8.0741,
+    "votes": 137,
+    "year": 2003,
+    "primaryGenre": "Miniatures",
+    "genres": [
+      "Miniatures"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Hands in the Sea",
+    "rating": 8.0735,
+    "votes": 242,
+    "year": 2016,
+    "primaryGenre": "Ancient",
+    "genres": [
+      "Ancient",
+      "Card Game",
+      "Wargame"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Baltic Gap",
+    "rating": 8.0724,
+    "votes": 209,
+    "year": 2009,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Orléans",
+    "rating": 8.0714,
+    "votes": 8349,
+    "year": 2014,
+    "primaryGenre": "Medieval",
+    "genres": [
+      "Medieval",
+      "Religious",
+      "Travel"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "Empires: Age of Discovery",
+    "rating": 8.07,
+    "votes": 1006,
+    "year": 2015,
+    "primaryGenre": "Civilization",
+    "genres": [
+      "Civilization",
+      "Exploration",
+      "Renaissance"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Sekigahara: The Unification of Japan",
+    "rating": 8.0691,
+    "votes": 2273,
+    "year": 2011,
+    "primaryGenre": "Civil War",
+    "genres": [
+      "Civil War",
+      "Renaissance",
+      "Wargame"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Forbidden Stars",
+    "rating": 8.0674,
+    "votes": 3764,
+    "year": 2015,
+    "primaryGenre": "Bluffing",
+    "genres": [
+      "Bluffing",
+      "Dice",
+      "Fighting",
+      "Miniatures",
+      "Science Fiction",
+      "Wargame"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Wings of Glory: WW1 Duel Pack",
+    "rating": 8.0667,
+    "votes": 159,
+    "year": 2013,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Fighting",
+      "Miniatures",
+      "Wargame",
+      "World War I"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "1846: The Race for the Midwest",
+    "rating": 8.064,
+    "votes": 609,
+    "year": 2005,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Trains"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Space Hulk (fourth edition)",
+    "rating": 8.0619,
+    "votes": 1012,
+    "year": 2014,
+    "primaryGenre": "Fighting",
+    "genres": [
+      "Fighting",
+      "Miniatures",
+      "Science Fiction"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "The Gallerist",
+    "rating": 8.0601,
+    "votes": 3630,
+    "year": 2015,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Baseball Highlights: 2045 – Deluxe Edition",
+    "rating": 8.0599,
+    "votes": 387,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Science Fiction",
+      "Sports"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "Silent Victory: U.S. Submarines in the Pacific, 1941-45",
+    "rating": 8.0573,
+    "votes": 319,
+    "year": 2016,
+    "primaryGenre": "Nautical",
+    "genres": [
+      "Nautical",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Agricola",
+    "rating": 8.0558,
+    "votes": 48261,
+    "year": 2007,
+    "primaryGenre": "Animals",
+    "genres": [
+      "Animals",
+      "Economic",
+      "Farming"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Lock 'n Load: Heroes of the Gap",
+    "rating": 8.055,
+    "votes": 110,
+    "year": 2011,
+    "primaryGenre": "Modern Warfare",
+    "genres": [
+      "Modern Warfare",
+      "Wargame"
+    ],
+    "playing_time": 90,
+    "max_players": 4
+  },
+  {
+    "name": "Guderian's Blitzkrieg II",
+    "rating": 8.0539,
+    "votes": 232,
+    "year": 2001,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 4500,
+    "max_players": 0
+  },
+  {
+    "name": "T.I.M.E Stories",
+    "rating": 8.0539,
+    "votes": 10214,
+    "year": 2015,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Mature / Adult",
+      "Medieval",
+      "Science Fiction"
+    ],
+    "playing_time": 90,
+    "max_players": 3
+  },
+  {
+    "name": "The Blitzkrieg Legend: The Battle for France, 1940",
+    "rating": 8.0529,
+    "votes": 139,
+    "year": 2012,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 2880,
+    "max_players": 0
+  },
+  {
+    "name": "Shadows of Brimstone: City of the Ancients",
+    "rating": 8.0471,
+    "votes": 2078,
+    "year": 2014,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "American West",
+      "Exploration",
+      "Fighting",
+      "Horror",
+      "Miniatures"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Reluctant Enemies",
+    "rating": 8.0442,
+    "votes": 172,
+    "year": 2014,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 750,
+    "max_players": 0
+  },
+  {
+    "name": "Wings of Glory: WW1 Rules and Accessories Pack",
+    "rating": 8.0435,
+    "votes": 319,
+    "year": 2012,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Card Game",
+      "Miniatures",
+      "Wargame",
+      "World War I"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "Clank!: A Deck-Building Adventure",
+    "rating": 8.0428,
+    "votes": 3197,
+    "year": 2016,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Race! Formula 90",
+    "rating": 8.0391,
+    "votes": 605,
+    "year": 2013,
+    "primaryGenre": "Racing",
+    "genres": [
+      "Racing",
+      "Sports"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Korea: The Forgotten War",
+    "rating": 8.0343,
+    "votes": 218,
+    "year": 2003,
+    "primaryGenre": "Korean War",
+    "genres": [
+      "Korean War",
+      "Modern Warfare",
+      "Wargame"
+    ],
+    "playing_time": 360,
+    "max_players": 1
+  },
+  {
+    "name": "Star Trek: Frontiers",
+    "rating": 8.0343,
+    "votes": 603,
+    "year": 2016,
+    "primaryGenre": "Movies / TV / Radio theme",
+    "genres": [
+      "Movies / TV / Radio theme",
+      "Science Fiction",
+      "Space Exploration"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Cthulhu Wars",
+    "rating": 8.0336,
+    "votes": 2092,
+    "year": 2015,
+    "primaryGenre": "Fantasy",
+    "genres": [
+      "Fantasy",
+      "Fighting",
+      "Horror",
+      "Miniatures"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "2GM Tactics",
+    "rating": 8.0322,
+    "votes": 239,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Taluva Deluxe",
+    "rating": 8.0305,
+    "votes": 134,
+    "year": 2015,
+    "primaryGenre": "City Building",
+    "genres": [
+      "City Building",
+      "Territory Building"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "A Distant Plain",
+    "rating": 8.0282,
+    "votes": 827,
+    "year": 2013,
+    "primaryGenre": "Modern Warfare",
+    "genres": [
+      "Modern Warfare",
+      "Wargame"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Shogun Big Box",
+    "rating": 8.028,
+    "votes": 106,
+    "year": 2015,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Territory Building"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "Millennium Blades",
+    "rating": 8.0273,
+    "votes": 1565,
+    "year": 2016,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Real-time"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Doctor Who: Solitaire Story Game",
+    "rating": 8.0269,
+    "votes": 266,
+    "year": 2009,
+    "primaryGenre": "Movies / TV / Radio theme",
+    "genres": [
+      "Movies / TV / Radio theme",
+      "Print & Play",
+      "Science Fiction"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "EastFront II",
+    "rating": 8.0269,
+    "votes": 497,
+    "year": 2006,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Paths of Glory",
+    "rating": 8.0258,
+    "votes": 3596,
+    "year": 1999,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War I"
+    ],
+    "playing_time": 480,
+    "max_players": 1
+  },
+  {
+    "name": "Coffee Roaster",
+    "rating": 8.0257,
+    "votes": 161,
+    "year": 2015,
+    "primaryGenre": "Deduction",
+    "genres": [
+      "Deduction",
+      "Industry / Manufacturing"
+    ],
+    "playing_time": 0,
+    "max_players": 10
+  },
+  {
+    "name": "Lock 'n Load: Heroes of the Blitzkrieg",
+    "rating": 8.0219,
+    "votes": 176,
+    "year": 2009,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 30,
+    "max_players": 6
+  },
+  {
+    "name": "Lancaster: Big Box",
+    "rating": 8.0202,
+    "votes": 152,
+    "year": 2015,
+    "primaryGenre": "Medieval",
+    "genres": [
+      "Medieval"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Red Winter: The Soviet Attack at Tolvajärvi, Finland – 8-12 December 1939",
+    "rating": 8.0197,
+    "votes": 405,
+    "year": 2012,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "The Manhattan Project: Energy Empire",
+    "rating": 8.0173,
+    "votes": 1361,
+    "year": 2016,
+    "primaryGenre": "Civilization",
+    "genres": [
+      "Civilization",
+      "Dice",
+      "Economic",
+      "Environmental",
+      "Industry / Manufacturing"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Robinson Crusoe: Adventures on the Cursed Island",
+    "rating": 8.0171,
+    "votes": 17999,
+    "year": 2012,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Exploration",
+      "Fighting",
+      "Novel-based"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Star Wars: Armada",
+    "rating": 8.0144,
+    "votes": 2698,
+    "year": 2015,
+    "primaryGenre": "Collectible Components",
+    "genres": [
+      "Collectible Components",
+      "Miniatures",
+      "Movies / TV / Radio theme",
+      "Science Fiction",
+      "Wargame"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Eclipse",
+    "rating": 8.0131,
+    "votes": 20285,
+    "year": 2011,
+    "primaryGenre": "Civilization",
+    "genres": [
+      "Civilization",
+      "Fighting",
+      "Science Fiction",
+      "Space Exploration",
+      "Wargame"
+    ],
+    "playing_time": 200,
+    "max_players": 2
+  },
+  {
+    "name": "Wing Leader: Victories 1940-1942",
+    "rating": 8.01,
+    "votes": 229,
+    "year": 2015,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "Brass: Lancashire",
+    "rating": 8.0092,
+    "votes": 10659,
+    "year": 2007,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic",
+      "Industry / Manufacturing",
+      "Transportation"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "The Great War",
+    "rating": 8.008,
+    "votes": 267,
+    "year": 2015,
+    "primaryGenre": "Miniatures",
+    "genres": [
+      "Miniatures",
+      "Wargame",
+      "World War I"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Evolution: Climate",
+    "rating": 8.0051,
+    "votes": 1454,
+    "year": 2016,
+    "primaryGenre": "Animals",
+    "genres": [
+      "Animals",
+      "Card Game",
+      "Educational",
+      "Environmental",
+      "Fighting",
+      "Prehistoric"
+    ],
+    "playing_time": 75,
+    "max_players": 4
+  },
+  {
+    "name": "Android: Netrunner",
+    "rating": 8.0044,
+    "votes": 20271,
+    "year": 2012,
+    "primaryGenre": "Bluffing",
+    "genres": [
+      "Bluffing",
+      "Card Game",
+      "Collectible Components",
+      "Science Fiction"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "Arcadia Quest",
+    "rating": 8.0042,
+    "votes": 4934,
+    "year": 2014,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Fighting",
+      "Miniatures"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Mombasa",
+    "rating": 8.0039,
+    "votes": 4874,
+    "year": 2015,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic"
+    ],
+    "playing_time": 150,
+    "max_players": 2
+  },
+  {
+    "name": "DAK",
+    "rating": 7.9981,
+    "votes": 154,
+    "year": 1997,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 360,
+    "max_players": 2
+  },
+  {
+    "name": "The Battle of Five Armies",
+    "rating": 7.9973,
+    "votes": 1420,
+    "year": 2014,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Miniatures",
+      "Novel-based",
+      "Wargame"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "The Colonists",
+    "rating": 7.9969,
+    "votes": 1201,
+    "year": 2016,
+    "primaryGenre": "Civilization",
+    "genres": [
+      "Civilization"
+    ],
+    "playing_time": 360,
+    "max_players": 1
+  },
+  {
+    "name": "Advanced Squad Leader: Starter Kit #3",
+    "rating": 7.9965,
+    "votes": 820,
+    "year": 2007,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Saints in Armor",
+    "rating": 7.9951,
+    "votes": 175,
+    "year": 2012,
+    "primaryGenre": "Pike and Shot",
+    "genres": [
+      "Pike and Shot",
+      "Wargame"
+    ],
+    "playing_time": 300,
+    "max_players": 2
+  },
+  {
+    "name": "Saga",
+    "rating": 7.9948,
+    "votes": 210,
+    "year": 2011,
+    "primaryGenre": "Medieval",
+    "genres": [
+      "Medieval",
+      "Miniatures",
+      "Wargame"
+    ],
+    "playing_time": 0,
+    "max_players": 13
+  },
+  {
+    "name": "Yokohama",
+    "rating": 7.9933,
+    "votes": 534,
+    "year": 2016,
+    "primaryGenre": "Economic",
+    "genres": [
+      "Economic"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "Leaving Earth",
+    "rating": 7.9884,
+    "votes": 755,
+    "year": 2015,
+    "primaryGenre": "Science Fiction",
+    "genres": [
+      "Science Fiction",
+      "Space Exploration"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Angola",
+    "rating": 7.9859,
+    "votes": 327,
+    "year": 1988,
+    "primaryGenre": "Civil War",
+    "genres": [
+      "Civil War",
+      "Modern Warfare",
+      "Wargame"
+    ],
+    "playing_time": 480,
+    "max_players": 1
+  },
+  {
+    "name": "The Voyages of Marco Polo",
+    "rating": 7.9852,
+    "votes": 9027,
+    "year": 2015,
+    "primaryGenre": "Dice",
+    "genres": [
+      "Dice",
+      "Economic",
+      "Medieval",
+      "Travel"
+    ],
+    "playing_time": 100,
+    "max_players": 2
+  },
+  {
+    "name": "Tyrants of the Underdark",
+    "rating": 7.9852,
+    "votes": 1206,
+    "year": 2016,
+    "primaryGenre": "Fantasy",
+    "genres": [
+      "Fantasy"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Ascension: Year One Collector's Edition",
+    "rating": 7.9818,
+    "votes": 215,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fantasy"
+    ],
+    "playing_time": 30,
+    "max_players": 5
+  },
+  {
+    "name": "This Hallowed Ground",
+    "rating": 7.9816,
+    "votes": 101,
+    "year": 1998,
+    "primaryGenre": "American Civil War",
+    "genres": [
+      "American Civil War",
+      "Wargame"
+    ],
+    "playing_time": 360,
+    "max_players": 1
+  },
+  {
+    "name": "World at War: The Untold Stories",
+    "rating": 7.9798,
+    "votes": 119,
+    "year": 2010,
+    "primaryGenre": "Modern Warfare",
+    "genres": [
+      "Modern Warfare",
+      "Wargame"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Dawn of the Zeds (Second edition)",
+    "rating": 7.9794,
+    "votes": 554,
+    "year": 2013,
+    "primaryGenre": "Horror",
+    "genres": [
+      "Horror",
+      "Zombies"
+    ],
+    "playing_time": 90,
+    "max_players": 3
+  },
+  {
+    "name": "Barbarossa: Army Group North, 1941",
+    "rating": 7.979,
+    "votes": 138,
+    "year": 2000,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 300,
+    "max_players": 2
+  },
+  {
+    "name": "Concordia",
+    "rating": 7.979,
+    "votes": 9947,
+    "year": 2013,
+    "primaryGenre": "Ancient",
+    "genres": [
+      "Ancient",
+      "Economic",
+      "Nautical"
+    ],
+    "playing_time": 100,
+    "max_players": 2
+  },
+  {
+    "name": "Navajo Wars",
+    "rating": 7.9772,
+    "votes": 549,
+    "year": 2013,
+    "primaryGenre": "American Indian Wars",
+    "genres": [
+      "American Indian Wars",
+      "American West",
+      "Wargame"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  },
+  {
+    "name": "SPQR (Deluxe Edition)",
+    "rating": 7.9772,
+    "votes": 503,
+    "year": 2008,
+    "primaryGenre": "Ancient",
+    "genres": [
+      "Ancient",
+      "Wargame"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Maria",
+    "rating": 7.9767,
+    "votes": 1929,
+    "year": 2009,
+    "primaryGenre": "Age of Reason",
+    "genres": [
+      "Age of Reason",
+      "Negotiation",
+      "Political",
+      "Wargame"
+    ],
+    "playing_time": 210,
+    "max_players": 2
+  },
+  {
+    "name": "Zombicide: Black Plague",
+    "rating": 7.976,
+    "votes": 4545,
+    "year": 2015,
+    "primaryGenre": "Adventure",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Fighting",
+      "Horror",
+      "Medieval",
+      "Miniatures",
+      "Zombies"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Napoleon's Triumph",
+    "rating": 7.9749,
+    "votes": 1525,
+    "year": 2007,
+    "primaryGenre": "Napoleonic",
+    "genres": [
+      "Napoleonic",
+      "Wargame"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Fleet Commander: 1 – Ignition",
+    "rating": 7.9714,
+    "votes": 238,
+    "year": 2014,
+    "primaryGenre": "Miniatures",
+    "genres": [
+      "Miniatures",
+      "Science Fiction"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Marne 1918: Friedensturm",
+    "rating": 7.9713,
+    "votes": 115,
+    "year": 2006,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War I"
+    ],
+    "playing_time": 0,
+    "max_players": 20
+  },
+  {
+    "name": "Where There Is Discord: War in the South Atlantic",
+    "rating": 7.9713,
+    "votes": 359,
+    "year": 2009,
+    "primaryGenre": "Modern Warfare",
+    "genres": [
+      "Modern Warfare",
+      "Nautical",
+      "Political",
+      "Wargame"
+    ],
+    "playing_time": 240,
+    "max_players": 2
+  },
+  {
+    "name": "Spheres of Influence: Struggle for Global Supremacy",
+    "rating": 7.9676,
+    "votes": 196,
+    "year": 2016,
+    "primaryGenre": "Modern Warfare",
+    "genres": [
+      "Modern Warfare",
+      "Negotiation",
+      "Territory Building",
+      "Wargame"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "Commands & Colors: Napoleonics",
+    "rating": 7.9673,
+    "votes": 1805,
+    "year": 2010,
+    "primaryGenre": "Napoleonic",
+    "genres": [
+      "Napoleonic",
+      "Wargame"
+    ],
+    "playing_time": 90,
+    "max_players": 4
+  },
+  {
+    "name": "Star Realms: Colony Wars",
+    "rating": 7.9662,
+    "votes": 1785,
+    "year": 2015,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Science Fiction"
+    ],
+    "playing_time": 20,
+    "max_players": 6
+  },
+  {
+    "name": "RAF: The Battle of Britain 1940",
+    "rating": 7.9661,
+    "votes": 599,
+    "year": 2009,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 300,
+    "max_players": 2
+  },
+  {
+    "name": "Tokaido Deluxe Edition",
+    "rating": 7.9629,
+    "votes": 329,
+    "year": 2015,
+    "primaryGenre": "Travel",
+    "genres": [
+      "Travel"
+    ],
+    "playing_time": 45,
+    "max_players": 4
+  },
+  {
+    "name": "Hornet Leader: Carrier Air Operations",
+    "rating": 7.9559,
+    "votes": 608,
+    "year": 2010,
+    "primaryGenre": "Aviation / Flight",
+    "genres": [
+      "Aviation / Flight",
+      "Modern Warfare",
+      "Wargame"
+    ],
+    "playing_time": 60,
+    "max_players": 4
+  },
+  {
+    "name": "Yomi (second edition)",
+    "rating": 7.9553,
+    "votes": 283,
+    "year": 2014,
+    "primaryGenre": "Card Game",
+    "genres": [
+      "Card Game",
+      "Fantasy",
+      "Fighting"
+    ],
+    "playing_time": 20,
+    "max_players": 6
+  },
+  {
+    "name": "Next War: Korea",
+    "rating": 7.9532,
+    "votes": 172,
+    "year": 2012,
+    "primaryGenre": "Modern Warfare",
+    "genres": [
+      "Modern Warfare",
+      "Wargame"
+    ],
+    "playing_time": 480,
+    "max_players": 0
+  },
+  {
+    "name": "Teenage Mutant Ninja Turtles: Shadows of the Past",
+    "rating": 7.9521,
+    "votes": 445,
+    "year": 2016,
+    "primaryGenre": "Comic Book / Strip",
+    "genres": [
+      "Comic Book / Strip",
+      "Fighting",
+      "Miniatures"
+    ],
+    "playing_time": 90,
+    "max_players": 2
+  },
+  {
+    "name": "DOOM: The Board Game",
+    "rating": 7.9508,
+    "votes": 392,
+    "year": 2016,
+    "primaryGenre": "Fighting",
+    "genres": [
+      "Fighting",
+      "Video Game Theme"
+    ],
+    "playing_time": 180,
+    "max_players": 2
+  },
+  {
+    "name": "Operation Dauntless: The Battles for Fontenay and Rauray, France, June 1944",
+    "rating": 7.949,
+    "votes": 104,
+    "year": 2016,
+    "primaryGenre": "Wargame",
+    "genres": [
+      "Wargame",
+      "World War II"
+    ],
+    "playing_time": 120,
+    "max_players": 2
+  }
+]

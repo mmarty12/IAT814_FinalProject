@@ -1,0 +1,252 @@
+[
+  {
+    "mechanic": "Deck / Pool Building",
+    "avg": 7.1589,
+    "count": 265
+  },
+  {
+    "mechanic": "Chit-Pull System",
+    "avg": 7.1526,
+    "count": 69
+  },
+  {
+    "mechanic": "Variable Phase Order",
+    "avg": 7.1044,
+    "count": 148
+  },
+  {
+    "mechanic": "Worker Placement",
+    "avg": 7.0653,
+    "count": 308
+  },
+  {
+    "mechanic": "Campaign / Battle Card Driven",
+    "avg": 7.0269,
+    "count": 218
+  },
+  {
+    "mechanic": "Simulation",
+    "avg": 7.0017,
+    "count": 357
+  },
+  {
+    "mechanic": "Route/Network Building",
+    "avg": 6.9486,
+    "count": 269
+  },
+  {
+    "mechanic": "Area-Impulse",
+    "avg": 6.9329,
+    "count": 30
+  },
+  {
+    "mechanic": "Grid Movement",
+    "avg": 6.9106,
+    "count": 332
+  },
+  {
+    "mechanic": "Hex-and-Counter",
+    "avg": 6.8855,
+    "count": 630
+  },
+  {
+    "mechanic": "Area Control / Area Influence",
+    "avg": 6.8793,
+    "count": 690
+  },
+  {
+    "mechanic": "Co-operative Play",
+    "avg": 6.8728,
+    "count": 350
+  },
+  {
+    "mechanic": "Action Point Allowance System",
+    "avg": 6.8606,
+    "count": 439
+  },
+  {
+    "mechanic": "Time Track",
+    "avg": 6.8454,
+    "count": 46
+  },
+  {
+    "mechanic": "Variable Player Powers",
+    "avg": 6.8414,
+    "count": 985
+  },
+  {
+    "mechanic": "Action / Movement Programming",
+    "avg": 6.8257,
+    "count": 146
+  },
+  {
+    "mechanic": "Stock Holding",
+    "avg": 6.8162,
+    "count": 138
+  },
+  {
+    "mechanic": "Card Drafting",
+    "avg": 6.7952,
+    "count": 672
+  },
+  {
+    "mechanic": "Area Movement",
+    "avg": 6.7586,
+    "count": 437
+  },
+  {
+    "mechanic": "Point to Point Movement",
+    "avg": 6.7146,
+    "count": 351
+  },
+  {
+    "mechanic": "Role Playing",
+    "avg": 6.6925,
+    "count": 185
+  },
+  {
+    "mechanic": "Dice Rolling",
+    "avg": 6.686,
+    "count": 1760
+  },
+  {
+    "mechanic": "Modular Board",
+    "avg": 6.6818,
+    "count": 685
+  },
+  {
+    "mechanic": "Player Elimination",
+    "avg": 6.6757,
+    "count": 205
+  },
+  {
+    "mechanic": "Secret Unit Deployment",
+    "avg": 6.6686,
+    "count": 236
+  },
+  {
+    "mechanic": "Area Enclosure",
+    "avg": 6.6611,
+    "count": 87
+  },
+  {
+    "mechanic": "Simultaneous Action Selection",
+    "avg": 6.654,
+    "count": 493
+  },
+  {
+    "mechanic": "Partnerships",
+    "avg": 6.6491,
+    "count": 353
+  },
+  {
+    "mechanic": "Hand Management",
+    "avg": 6.6227,
+    "count": 1726
+  },
+  {
+    "mechanic": "Tile Placement",
+    "avg": 6.6207,
+    "count": 698
+  },
+  {
+    "mechanic": "Line Drawing",
+    "avg": 6.5751,
+    "count": 40
+  },
+  {
+    "mechanic": "Take That",
+    "avg": 6.5656,
+    "count": 206
+  },
+  {
+    "mechanic": "Auction/Bidding",
+    "avg": 6.5436,
+    "count": 537
+  },
+  {
+    "mechanic": "Press Your Luck",
+    "avg": 6.5284,
+    "count": 255
+  },
+  {
+    "mechanic": "Commodity Speculation",
+    "avg": 6.5157,
+    "count": 127
+  },
+  {
+    "mechanic": "Voting",
+    "avg": 6.5138,
+    "count": 159
+  },
+  {
+    "mechanic": "Pick-up and Deliver",
+    "avg": 6.5066,
+    "count": 260
+  },
+  {
+    "mechanic": "Storytelling",
+    "avg": 6.4588,
+    "count": 98
+  },
+  {
+    "mechanic": "Set Collection",
+    "avg": 6.4191,
+    "count": 1039
+  },
+  {
+    "mechanic": "Pattern Building",
+    "avg": 6.3789,
+    "count": 224
+  },
+  {
+    "mechanic": "Memory",
+    "avg": 6.3362,
+    "count": 277
+  },
+  {
+    "mechanic": "Trick-taking",
+    "avg": 6.3173,
+    "count": 107
+  },
+  {
+    "mechanic": "Paper-and-Pencil",
+    "avg": 6.3139,
+    "count": 86
+  },
+  {
+    "mechanic": "Betting/Wagering",
+    "avg": 6.2961,
+    "count": 141
+  },
+  {
+    "mechanic": "Trading",
+    "avg": 6.2955,
+    "count": 248
+  },
+  {
+    "mechanic": "Acting",
+    "avg": 6.2894,
+    "count": 73
+  },
+  {
+    "mechanic": "Pattern Recognition",
+    "avg": 6.2061,
+    "count": 146
+  },
+  {
+    "mechanic": "Rock-Paper-Scissors",
+    "avg": 6.1876,
+    "count": 61
+  },
+  {
+    "mechanic": "NA",
+    "avg": 5.8906,
+    "count": 536
+  },
+  {
+    "mechanic": "Roll / Spin and Move",
+    "avg": 5.6778,
+    "count": 430
+  }
+]

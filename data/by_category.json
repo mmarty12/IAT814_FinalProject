@@ -1,0 +1,362 @@
+[
+  {
+    "category": "Civil War",
+    "avg": 7.2576,
+    "count": 31
+  },
+  {
+    "category": "World War II",
+    "avg": 7.0704,
+    "count": 392
+  },
+  {
+    "category": "Civilization",
+    "avg": 7.0324,
+    "count": 173
+  },
+  {
+    "category": "American Civil War",
+    "avg": 6.9955,
+    "count": 71
+  },
+  {
+    "category": "Miniatures",
+    "avg": 6.9808,
+    "count": 330
+  },
+  {
+    "category": "Napoleonic",
+    "avg": 6.9711,
+    "count": 80
+  },
+  {
+    "category": "Age of Reason",
+    "avg": 6.9691,
+    "count": 57
+  },
+  {
+    "category": "World War I",
+    "avg": 6.947,
+    "count": 72
+  },
+  {
+    "category": "Trains",
+    "avg": 6.9188,
+    "count": 160
+  },
+  {
+    "category": "Industry / Manufacturing",
+    "avg": 6.9027,
+    "count": 127
+  },
+  {
+    "category": "Wargame",
+    "avg": 6.8834,
+    "count": 1191
+  },
+  {
+    "category": "Renaissance",
+    "avg": 6.855,
+    "count": 137
+  },
+  {
+    "category": "City Building",
+    "avg": 6.8477,
+    "count": 275
+  },
+  {
+    "category": "Space Exploration",
+    "avg": 6.8312,
+    "count": 100
+  },
+  {
+    "category": "Territory Building",
+    "avg": 6.8152,
+    "count": 231
+  },
+  {
+    "category": "Transportation",
+    "avg": 6.7774,
+    "count": 188
+  },
+  {
+    "category": "Farming",
+    "avg": 6.7674,
+    "count": 96
+  },
+  {
+    "category": "Environmental",
+    "avg": 6.7417,
+    "count": 55
+  },
+  {
+    "category": "Aviation / Flight",
+    "avg": 6.7337,
+    "count": 133
+  },
+  {
+    "category": "Spies/Secret Agents",
+    "avg": 6.7191,
+    "count": 75
+  },
+  {
+    "category": "Economic",
+    "avg": 6.7168,
+    "count": 693
+  },
+  {
+    "category": "Medieval",
+    "avg": 6.7088,
+    "count": 426
+  },
+  {
+    "category": "Mythology",
+    "avg": 6.6994,
+    "count": 131
+  },
+  {
+    "category": "Ancient",
+    "avg": 6.6943,
+    "count": 331
+  },
+  {
+    "category": "Political",
+    "avg": 6.6926,
+    "count": 229
+  },
+  {
+    "category": "Religious",
+    "avg": 6.6914,
+    "count": 51
+  },
+  {
+    "category": "Fighting",
+    "avg": 6.6759,
+    "count": 691
+  },
+  {
+    "category": "Modern Warfare",
+    "avg": 6.6662,
+    "count": 123
+  },
+  {
+    "category": "Print & Play",
+    "avg": 6.6454,
+    "count": 118
+  },
+  {
+    "category": "Fantasy",
+    "avg": 6.619,
+    "count": 931
+  },
+  {
+    "category": "Nautical",
+    "avg": 6.6139,
+    "count": 266
+  },
+  {
+    "category": "Science Fiction",
+    "avg": 6.5999,
+    "count": 639
+  },
+  {
+    "category": "Sports",
+    "avg": 6.5912,
+    "count": 160
+  },
+  {
+    "category": "Collectible Components",
+    "avg": 6.5191,
+    "count": 167
+  },
+  {
+    "category": "Adventure",
+    "avg": 6.5178,
+    "count": 410
+  },
+  {
+    "category": "Exploration",
+    "avg": 6.5118,
+    "count": 351
+  },
+  {
+    "category": "Zombies",
+    "avg": 6.5113,
+    "count": 88
+  },
+  {
+    "category": "American West",
+    "avg": 6.5097,
+    "count": 104
+  },
+  {
+    "category": "Horror",
+    "avg": 6.5073,
+    "count": 262
+  },
+  {
+    "category": "Travel",
+    "avg": 6.5067,
+    "count": 78
+  },
+  {
+    "category": "NA",
+    "avg": 6.4931,
+    "count": 52
+  },
+  {
+    "category": "Comic Book / Strip",
+    "avg": 6.489,
+    "count": 90
+  },
+  {
+    "category": "Deduction",
+    "avg": 6.4782,
+    "count": 363
+  },
+  {
+    "category": "Bluffing",
+    "avg": 6.4749,
+    "count": 467
+  },
+  {
+    "category": "Mafia",
+    "avg": 6.4553,
+    "count": 51
+  },
+  {
+    "category": "Video Game Theme",
+    "avg": 6.4526,
+    "count": 100
+  },
+  {
+    "category": "Murder/Mystery",
+    "avg": 6.4461,
+    "count": 111
+  },
+  {
+    "category": "Negotiation",
+    "avg": 6.4365,
+    "count": 284
+  },
+  {
+    "category": "Prehistoric",
+    "avg": 6.4232,
+    "count": 70
+  },
+  {
+    "category": "Arabian",
+    "avg": 6.3862,
+    "count": 49
+  },
+  {
+    "category": "Card Game",
+    "avg": 6.366,
+    "count": 2102
+  },
+  {
+    "category": "Novel-based",
+    "avg": 6.3617,
+    "count": 190
+  },
+  {
+    "category": "Puzzle",
+    "avg": 6.3548,
+    "count": 138
+  },
+  {
+    "category": "Dice",
+    "avg": 6.3499,
+    "count": 568
+  },
+  {
+    "category": "Mature / Adult",
+    "avg": 6.3297,
+    "count": 34
+  },
+  {
+    "category": "Abstract Strategy",
+    "avg": 6.3291,
+    "count": 464
+  },
+  {
+    "category": "Pirates",
+    "avg": 6.3033,
+    "count": 128
+  },
+  {
+    "category": "Educational",
+    "avg": 6.279,
+    "count": 101
+  },
+  {
+    "category": "Real-time",
+    "avg": 6.2651,
+    "count": 234
+  },
+  {
+    "category": "Animals",
+    "avg": 6.2425,
+    "count": 421
+  },
+  {
+    "category": "Racing",
+    "avg": 6.2194,
+    "count": 289
+  },
+  {
+    "category": "Number",
+    "avg": 6.2025,
+    "count": 43
+  },
+  {
+    "category": "Maze",
+    "avg": 6.199,
+    "count": 69
+  },
+  {
+    "category": "Humor",
+    "avg": 6.1414,
+    "count": 412
+  },
+  {
+    "category": "Party Game",
+    "avg": 6.1332,
+    "count": 543
+  },
+  {
+    "category": "Action / Dexterity",
+    "avg": 6.0901,
+    "count": 347
+  },
+  {
+    "category": "Movies / TV / Radio theme",
+    "avg": 6.0564,
+    "count": 315
+  },
+  {
+    "category": "Word Game",
+    "avg": 6.0082,
+    "count": 142
+  },
+  {
+    "category": "Memory",
+    "avg": 5.9353,
+    "count": 133
+  },
+  {
+    "category": "Electronic",
+    "avg": 5.9038,
+    "count": 72
+  },
+  {
+    "category": "Children's Game",
+    "avg": 5.836,
+    "count": 438
+  },
+  {
+    "category": "Trivia",
+    "avg": 5.7026,
+    "count": 153
+  }
+]

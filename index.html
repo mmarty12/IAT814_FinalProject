@@ -94,6 +94,23 @@
           <!-- VIEW 1 -->
           <div class="secondary-panel" id="view-byname">
             <div class="panel-heading">Rating of Games by Name</div>
+            <div class="stats-row">
+              <div class="stat-card" id="stat-highest">
+                <div class="stat-label">Highest Rated</div>
+                <div class="stat-value"></div>
+                <div class="stat-sub"></div>
+              </div>
+              <div class="stat-card" id="stat-total">
+                <div class="stat-label">Total Games</div>
+                <div class="stat-value"></div>
+                <div class="stat-sub">in dataset</div>
+              </div>
+              <div class="stat-card" id="stat-avg">
+                <div class="stat-label">Overall Avg</div>
+                <div class="stat-value"></div>
+                <div class="stat-sub">across all rated games</div>
+              </div>
+            </div>
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-title">Top 25 Rated Games</div>
@@ -107,6 +124,23 @@
           <!-- VIEW 2 -->
           <div class="secondary-panel" id="view-bycategory">
             <div class="panel-heading">Rating of Games by Category</div>
+            <div class="stats-row">
+              <div class="stat-card" id="stat-top-cat">
+                <div class="stat-label">Top Rated Category</div>
+                <div class="stat-value"></div>
+                <div class="stat-sub"></div>
+              </div>
+              <div class="stat-card" id="stat-most-cat">
+                <div class="stat-label">Most Games</div>
+                <div class="stat-value"></div>
+                <div class="stat-sub"></div>
+              </div>
+              <div class="stat-card" id="stat-low-cat">
+                <div class="stat-label">Lowest Rated</div>
+                <div class="stat-value"></div>
+                <div class="stat-sub"></div>
+              </div>
+            </div>
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-title">Avg Rating by Category</div>
@@ -120,6 +154,23 @@
           <!-- VIEW 3 -->
           <div class="secondary-panel" id="view-bymechanic">
             <div class="panel-heading">Rating of Games by Mechanic</div>
+            <div class="stats-row">
+              <div class="stat-card" id="stat-mech-top">
+                <div class="stat-label">Top Rated Mechanic</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-mech-most">
+                <div class="stat-label">Most Common</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-mech-bottom">
+                <div class="stat-label">Lowest Rated</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+            </div>
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-title">Top 15 Mechanics by Avg Rating</div>
@@ -185,9 +236,6 @@
           <!-- VIEW 9 -->
           <div class="secondary-panel" id="view-distribution">
             <div class="panel-heading">Distribution of Games</div>
-            <div class="panel-sub">
-              Click any bar to filter all other charts to matching games. Click again to reset.
-            </div>
             <div class="two-col">
               <div class="chart-card">
                 <div class="chart-card-header"><div class="chart-card-title">By Genre</div></div>
@@ -233,6 +281,6 @@
       <div class="tt-row"><span class="tt-label">Votes</span><span class="tt-val" id="tt-votes"></span></div>
     </div>
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
