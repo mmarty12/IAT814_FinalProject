@@ -31,5 +31,5 @@ export async function loadData() {
       console.warn('No color for primaryGenre:', JSON.stringify(g.primaryGenre), '— game:', g.name);
   });
 
-  return { stats, byCategory, byMechanic };
+  return { stats, byCategory, byMechanic, expansions, byTeamSize, byPlaytime, byYear };
 }

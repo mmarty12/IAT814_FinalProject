@@ -8,7 +8,9 @@ import { GENRE_BINS } from './colors.js';
 const bubbleSvg = d3.select('#bubbleSvg');
 const tooltip = d3.select('#tooltip');
 let bubbles = [];
+let bubbleGroup = null;
 let activeFilter = 'all';
+const pinnedGames = [];
 
 // Radius bounds — computed from container size, shared between layout & draw
 let minR = 0,
@@ -100,6 +102,8 @@ function drawBubbles(W, H) {
     .attr('class', 'bubble')
     .style('opacity', (d) => (genreMatchesFilter(d) ? 1 : 0.1));
 
+  bubbleGroup = bubbleSvg.append('g');
+
   //circle
   els
     .append('circle')
@@ -168,36 +172,178 @@ function drawBubbles(W, H) {
         .style('font-size', `${ratingFSize}px`)
         .text(`★ ${d.rating.toFixed(2)}`);
     });
+
+  attachHoverDimming(els);
+}
+
+function attachHoverDimming(els) {
+  els
+    .on('mouseenter.dim', function (_, d) {
+      if (!genreMatchesFilter(d)) return;
+
+      bubbleGroup
+        .selectAll('.bubble')
+        .transition('dim')
+        .duration(150)
+        .style('opacity', (b) => {
+          if (b === d) return 1;
+          return genreMatchesFilter(b) ? 0.2 : 0.05;
+        });
+
+      d3.select(this)
+        .select('.bubble-main')
+        .transition('grow')
+        .duration(150)
+        .attr('r', d.r * 1.05)
+        .attr('stroke-width', 2.5);
+    })
+    .on('mouseleave.dim', function (_, d) {
+      bubbleGroup
+        .selectAll('.bubble')
+        .transition('dim')
+        .duration(220)
+        .style('opacity', (b) => (genreMatchesFilter(b) ? 1 : 0.1));
+
+      d3.select(this)
+        .select('.bubble-main')
+        .transition('grow')
+        .duration(220)
+        .attr('r', d.r)
+        .attr('stroke-width', genreMatchesFilter(d) ? 1.8 : 1);
+    });
+}
+
+function animateFilter() {
+  if (!bubbleGroup) return;
+
+  bubbleGroup
+    .selectAll('.bubble')
+    .transition('filter')
+    .duration(300)
+    .ease(d3.easeCubicInOut)
+    .style('opacity', (d) => (genreMatchesFilter(d) ? 1 : 0.08));
+
+  bubbleGroup
+    .selectAll('.bubble')
+    .select('.bubble-main')
+    .transition('filter-stroke')
+    .duration(300)
+    .attr('stroke-width', (d) => (genreMatchesFilter(d) ? 1.8 : 1));
 }
 
 //TOOLTIP
 
 export function setupBubbleInteractions() {
+  const tt = document.getElementById('bubble-tooltip');
+  const ttName = document.getElementById('bt-name');
+  const ttGenre = document.getElementById('bt-genre');
+  const ttRating = document.getElementById('bt-rating');
+  const ttYear = document.getElementById('bt-year');
+  const ttVotes = document.getElementById('bt-votes');
+
+  let currentHit = null;
+
+  // ── mouse tracking ──────────────────────────────────────────────────────────
   bubbleSvg.on('mousemove', function (event) {
     const [mx, my] = d3.pointer(event);
     const hit = bubbles.find((b) => genreMatchesFilter(b) && Math.hypot(b.x - mx, b.y - my) < b.r);
 
     if (hit) {
-      tooltip.select('#tt-name').text(hit.name);
-      tooltip.select('#tt-rating').text(`${hit.rating.toFixed(2)} / 10`);
-      tooltip.select('#tt-genre').text(hit.genres.join(', '));
-      tooltip.select('#tt-votes').text(`${hit.votes.toLocaleString()} ratings`);
-      tooltip
-        .style('left', `${Math.min(event.pageX + 14, window.innerWidth - 210)}px`)
-        .style('top', `${Math.min(event.pageY - 10, window.innerHeight - 130)}px`)
-        .classed('visible', true);
+      currentHit = hit;
+
+      ttName.textContent = hit.name;
+      ttGenre.textContent = hit.genres.join(', ');
+      ttRating.textContent = `★ ${hit.rating.toFixed(2)}`;
+      ttYear.textContent = hit.year;
+      ttVotes.textContent = `${hit.votes.toLocaleString()} community ratings`;
+
+      const x = Math.min(event.pageX + 16, window.innerWidth - 260);
+      const y = Math.min(event.pageY - 10, window.innerHeight - 200);
+      tt.style.left = `${x}px`;
+      tt.style.top = `${y}px`;
+      tt.classList.add('visible');
       bubbleSvg.style('cursor', 'pointer');
     } else {
-      tooltip.classed('visible', false);
+      currentHit = null;
+      tt.classList.remove('visible');
       bubbleSvg.style('cursor', 'default');
     }
   });
 
   bubbleSvg.on('mouseleave', () => {
-    tooltip.classed('visible', false);
+    currentHit = null;
+    tt.classList.remove('visible');
     bubbleSvg.style('cursor', 'default');
   });
+
+  // ── click to pin ────────────────────────────────────────────────────────────
+  bubbleSvg.on('click', () => {
+    if (currentHit) pinGame(currentHit);
+  });
 }
+
+// ── PIN LOGIC ─────────────────────────────────────────────────────────────────
+
+function pinGame(game) {
+  if (pinnedGames.some((p) => p.name === game.name)) return;
+  if (pinnedGames.length >= 3) return;
+  pinnedGames.push(game);
+  renderPinPanel();
+}
+
+function unpinGame(name) {
+  const idx = pinnedGames.findIndex((p) => p.name === name);
+  if (idx !== -1) pinnedGames.splice(idx, 1);
+  renderPinPanel();
+}
+
+window.clearPins = () => {
+  pinnedGames.length = 0;
+  renderPinPanel();
+};
+
+function renderPinPanel() {
+  const panel = document.getElementById('pin-panel');
+  const cards = document.getElementById('pin-cards');
+  if (!panel || !cards) return;
+
+  cards.innerHTML = '';
+
+  if (!pinnedGames.length) {
+    panel.classList.remove('visible');
+    return;
+  }
+
+  pinnedGames.forEach((g, i) => {
+    const card = document.createElement('div');
+    card.className = 'pin-card';
+    card.innerHTML = `
+    <div>
+      <div class="pin-card-name">${g.name}</div>
+      <div class="pin-card-meta">${g.genres[0]} · ${g.year}</div>
+      <div class="pin-card-rating">★ ${g.rating.toFixed(2)}</div>
+      <div class="pin-card-meta">${g.votes.toLocaleString()} ratings</div>
+    </div>
+    <button class="pin-card-remove">✕</button>
+  `;
+
+    // attach event properly (no inline onclick)
+    card.querySelector('.pin-card-remove').addEventListener('click', () => unpinGame(g.name));
+
+    cards.appendChild(card);
+
+    // add "vs" AFTER every card except the last
+    if (i < pinnedGames.length - 1) {
+      const div = document.createElement('div');
+      div.className = 'pin-divider';
+      div.textContent = 'vs';
+      cards.appendChild(div);
+    }
+  });
+
+  panel.classList.add('visible');
+}
+window.unpinGame = unpinGame;
 
 export function filterGenre(btn, genre) {
   d3.selectAll('.topbar-pill').classed('active', false);
@@ -205,6 +351,7 @@ export function filterGenre(btn, genre) {
   activeFilter = genre;
   const container = bubbleSvg.node().parentElement;
   drawBubbles(container.clientWidth, container.clientHeight);
+  animateFilter();
 }
 
 function genreMatchesFilter(game) {

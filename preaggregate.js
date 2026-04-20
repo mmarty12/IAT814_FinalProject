@@ -83,8 +83,6 @@ function getOrCreate(map, key, factory) {
   return map.get(key);
 }
 
-// ─── PARSE ───────────────────────────────────────────────────────────────────
-
 async function loadRows() {
   return new Promise((resolve, reject) => {
     const rows = [];
@@ -102,9 +100,6 @@ async function loadRows() {
   });
 }
 
-// ─── AGGREGATORS ─────────────────────────────────────────────────────────────
-
-/** Chart 1 – top N games sorted by rating, keeping only columns the UI needs */
 function buildTopGames(rows) {
   return rows
     .slice() // don't mutate original
@@ -115,6 +110,7 @@ function buildTopGames(rows) {
       rating: +Number(r.average_rating).toFixed(4),
       votes: Number(r.users_rated),
       year: Number(r.year_published),
+      thumbnail: r.thumbnail || null, // ← add this
       primaryGenre: splitField(r.category)[0] ?? 'Unknown',
       genres: splitField(r.category),
       playing_time: Number(r.playing_time),
@@ -122,7 +118,6 @@ function buildTopGames(rows) {
     }));
 }
 
-/** Chart 2 – avg rating per category (exploded) */
 function buildByCategory(rows) {
   const acc = new Map();
   for (const r of rows) {
@@ -135,7 +130,6 @@ function buildByCategory(rows) {
     .sort((a, b) => b.avg - a.avg);
 }
 
-/** Chart 3 – avg rating per mechanic (exploded) */
 function buildByMechanic(rows) {
   const acc = new Map();
   for (const r of rows) {
@@ -148,72 +142,95 @@ function buildByMechanic(rows) {
     .sort((a, b) => b.avg - a.avg);
 }
 
-/** Chart 4 – games with expansions vs without */
 function buildExpansions(rows) {
-  const withExp = new MeanAcc();
-  const withoutExp = new MeanAcc();
+  // plain JS rollup — no d3 needed
+  const groups = new Map();
+
   for (const r of rows) {
-    const hasExp = r.expansion && r.expansion.trim() && r.expansion !== 'nan';
-    (hasExp ? withExp : withoutExp).add(r.average_rating);
+    const n = Math.min((r.expansion || '').split(',').filter((s) => s.trim()).length, 5);
+    if (!groups.has(n)) groups.set(n, { sum: 0, count: 0 });
+    const g = groups.get(n);
+    g.sum += +r.average_rating;
+    g.count++;
   }
-  return [
-    { label: 'With Expansions', ...withExp.toJSON() },
-    { label: 'Without Expansions', ...withoutExp.toJSON() },
-  ];
+
+  const labels = ['No expansions', '1 expansion', '2 expansions', '3 expansions', '4 expansions', '5+ expansions'];
+
+  return Array.from({ length: 6 }, (_, i) => {
+    const g = groups.get(i) || { sum: 0, count: 0 };
+    const avg = g.count ? g.sum / g.count : 0;
+    return { label: labels[i], expansionCount: i, avg: +avg.toFixed(4), count: g.count };
+  });
 }
 
-/** Chart 5 – avg rating by max_players (1–8) */
 function buildByTeamSize(rows) {
   const acc = new Map();
+  const gamesBin = new Map();
+
   for (const r of rows) {
     const n = Number(r.max_players);
     if (n >= 1 && n <= 8) {
       getOrCreate(acc, n, () => new MeanAcc()).add(r.average_rating);
+      if (!gamesBin.has(n)) gamesBin.set(n, []);
+      gamesBin.get(n).push({ name: r.name, rating: +Number(r.average_rating).toFixed(2) });
     }
   }
-  return Array.from(acc, ([max_players, a]) => ({ max_players, ...a.toJSON() })).sort(
-    (a, b) => a.max_players - b.max_players,
-  );
+
+  return Array.from(acc, ([max_players, a]) => ({
+    max_players,
+    ...a.toJSON(),
+    top3: (gamesBin.get(max_players) || []).sort((a, b) => b.rating - a.rating).slice(0, 3),
+  })).sort((a, b) => a.max_players - b.max_players);
 }
 
-/** Chart 6 – avg rating by playtime bucket */
 function buildByPlaytime(rows) {
   const acc = new Map();
+  const gamesBin = new Map();
+
   for (const r of rows) {
     const bucket = ptBucket(r.playing_time);
-    if (bucket) getOrCreate(acc, bucket, () => new MeanAcc()).add(r.average_rating);
+    if (bucket) {
+      getOrCreate(acc, bucket, () => new MeanAcc()).add(r.average_rating);
+      if (!gamesBin.has(bucket)) gamesBin.set(bucket, []);
+      gamesBin.get(bucket).push({ name: r.name, rating: +Number(r.average_rating).toFixed(2) });
+    }
   }
-  // return in defined order
+
   return PT_BUCKETS.map(({ label }) => {
     const a = acc.get(label);
-    return a ? { label, ...a.toJSON() } : null;
+    if (!a) return null;
+    return {
+      label,
+      ...a.toJSON(),
+      top3: (gamesBin.get(label) || []).sort((a, b) => b.rating - a.rating).slice(0, 3),
+    };
   }).filter(Boolean);
 }
 
-/** Chart 7 – avg rating per year (1970–2016) */
 function buildByYear(rows) {
   const acc = new Map();
+  const gamesBin = new Map();
+
   for (const r of rows) {
     const yr = Number(r.year_published);
     if (yr >= 1970 && yr <= 2016) {
       getOrCreate(acc, yr, () => new MeanAcc()).add(r.average_rating);
+      if (!gamesBin.has(yr)) gamesBin.set(yr, []);
+      gamesBin.get(yr).push({ name: r.name, rating: +Number(r.average_rating).toFixed(2) });
     }
   }
-  return Array.from(acc, ([year, a]) => ({ year, ...a.toJSON() })).sort((a, b) => a.year - b.year);
+
+  return Array.from(acc, ([year, a]) => ({
+    year,
+    ...a.toJSON(),
+    top2: (gamesBin.get(year) || []).sort((a, b) => b.rating - a.rating).slice(0, 2),
+  })).sort((a, b) => a.year - b.year);
 }
 
-/**
- * Chart 8 – distribution for linked map
- * Returns two arrays: categoryDist and playtimeDist, plus a cross table
- * so the front-end can filter one when the user clicks the other.
- *
- * cross: array of { category, playtime_bucket, count } — lets D3 do
- * the filtering without reloading data.
- */
 function buildDistribution(rows) {
   const catCount = new Map();
   const ptCount = new Map();
-  const cross = new Map(); // "cat||bucket" → count
+  const cross = new Map();
 
   for (const r of rows) {
     const cats = splitField(r.category);
@@ -241,7 +258,6 @@ function buildDistribution(rows) {
     count: ptCount.get(label) ?? 0,
   }));
 
-  // flatten cross map, keeping only known categories
   const knownCats = new Set(categoryDist.map((d) => d.category));
   const crossArr = Array.from(cross, ([key, count]) => {
     const [category, playtime_bucket] = key.split('||');
@@ -251,11 +267,6 @@ function buildDistribution(rows) {
   return { categoryDist, playtimeDist, cross: crossArr };
 }
 
-/**
- * Chart 9 – heatmap: mechanic × category avg rating
- * Returns { mechs, cats, matrix } where matrix[i][j] is the avg rating
- * for HM_MECHS[i] × HM_CATS[j], or null if fewer than 5 games.
- */
 function buildHeatmap(rows) {
   // acc[mech][cat] = MeanAcc
   const acc = {};
@@ -288,7 +299,6 @@ function buildHeatmap(rows) {
   return { mechs: HM_MECHS, cats: HM_CATS, matrix };
 }
 
-// BUILD STATS
 function buildStats(rows, rawTotal) {
   const top = rows.reduce((a, b) => (+b.average_rating > +a.average_rating ? b : a));
   const avg = rows.reduce((s, r) => s + +r.average_rating, 0) / rows.length;
@@ -299,16 +309,12 @@ function buildStats(rows, rawTotal) {
   };
 }
 
-// ─── WRITE ────────────────────────────────────────────────────────────────────
-
 function write(filename, data) {
   const path = join(OUT_DIR, filename);
   writeFileSync(path, JSON.stringify(data, null, 2), 'utf8');
   const kb = (JSON.stringify(data).length / 1024).toFixed(1);
   console.log(`  ✓  ${filename.padEnd(22)} ${kb.padStart(6)} KB`);
 }
-
-// ─── MAIN ─────────────────────────────────────────────────────────────────────
 
 async function main() {
   console.log(`\nReading ${CSV_PATH} …`);

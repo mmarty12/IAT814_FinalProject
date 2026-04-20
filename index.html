@@ -68,12 +68,23 @@
           <button class="nav-item" onclick="switchView('correlation', this)">
             <span class="nav-dot"></span>Mechanics × Ratings
           </button>
+          <div class="sidebar-footer-note">
+            Created by Mariia Martyniuk for
+            <p>IAT814 Data Visualization Course</p>
+          </div>
         </div>
       </aside>
 
       <main class="main">
         <div class="topbar">
           <div class="topbar-title" id="topbar-title">Game Popularity — Bubble Map</div>
+          <button
+            class="topbar-pill info-dataset-btn"
+            onclick="openInfoModal('modal-bubbles')"
+            title="About this visualization"
+          >
+            About the dataset
+          </button>
           <div id="genre-filters" style="display: flex; gap: 8px; flex-wrap: wrap">
             <button class="topbar-pill active" onclick="filterGenre(this, 'all')">All</button>
             <button class="topbar-pill" onclick="filterGenre(this, 'War & History')">War & History</button>
@@ -87,6 +98,41 @@
 
         <div class="content">
           <!-- BUBBLE VIEW -->
+          <div class="info-modal-overlay" id="modal-bubbles" onclick="closeInfoModal('modal-bubbles')">
+            <div class="info-modal" onclick="event.stopPropagation()">
+              <div class="info-modal-header">
+                <span class="dist-instructions-title">About the dataset</span>
+                <button class="info-modal-close" onclick="closeInfoModal('modal-bubbles')">✕</button>
+              </div>
+
+              <div class="dist-instructions-steps">
+                <div class="dist-step">
+                  <div class="dist-step-text">
+                    This visualization is based on a large dataset of approximately <strong>90,000 board games</strong>,
+                    originally sourced from <strong>BoardGameGeek</strong> and found on <strong>Kaggle</strong>.
+                  </div>
+                </div>
+
+                <div class="dist-step">
+                  <div class="dist-step-text">
+                    The dataset includes key attributes such as <strong>user ratings</strong>,
+                    <strong>number of votes</strong>, <strong>genres</strong>, <strong>mechanics</strong>,
+                    <strong>playtime</strong>, and <strong>release year</strong>, enabling exploration of popularity
+                    patterns and design trends across games.
+                  </div>
+                </div>
+
+                <div class="dist-step">
+                  <div class="dist-step-text">
+                    Thess visualizations are primarily designed for <strong>casual and family players</strong> who want
+                    to discover popular and accessible games. It can also support
+                    <strong>quick trend exploration</strong> for reviewers or designers, though it is not intended as a
+                    deep analytical tool.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div id="view-bubbles" style="width: 100%; height: 100%; min-height: 500px; position: relative">
             <svg id="bubbleSvg" style="width: 100%; height: 100%; display: block"></svg>
           </div>
@@ -96,7 +142,7 @@
             <div class="panel-heading">Rating of Games by Name</div>
             <div class="stats-row">
               <div class="stat-card" id="stat-highest">
-                <div class="stat-label">Highest Rated</div>
+                <div class="stat-label">Highest Rated Game</div>
                 <div class="stat-value"></div>
                 <div class="stat-sub"></div>
               </div>
@@ -136,14 +182,14 @@
                 <div class="stat-sub"></div>
               </div>
               <div class="stat-card" id="stat-low-cat">
-                <div class="stat-label">Lowest Rated</div>
+                <div class="stat-label">Lowest Rated Category</div>
                 <div class="stat-value"></div>
                 <div class="stat-sub"></div>
               </div>
             </div>
             <div class="chart-card">
               <div class="chart-card-header">
-                <div class="chart-card-title">Avg Rating by Category</div>
+                <div class="chart-card-title">Top 25 Categories by Avg Rating</div>
               </div>
               <div class="chart-body">
                 <div class="bar-list" id="bars-bycategory"></div>
@@ -161,12 +207,12 @@
                 <div class="stat-sub">—</div>
               </div>
               <div class="stat-card" id="stat-mech-most">
-                <div class="stat-label">Most Common</div>
+                <div class="stat-label">Most Common Mechanic</div>
                 <div class="stat-value">—</div>
                 <div class="stat-sub">—</div>
               </div>
               <div class="stat-card" id="stat-mech-bottom">
-                <div class="stat-label">Lowest Rated</div>
+                <div class="stat-label">Lowest Rated Mechanic</div>
                 <div class="stat-value">—</div>
                 <div class="stat-sub">—</div>
               </div>
@@ -184,9 +230,27 @@
           <!-- VIEW 4 -->
           <div class="secondary-panel" id="view-expansions">
             <div class="panel-heading">Games with Expansions vs Ratings</div>
+
+            <div class="stats-row">
+              <div class="stat-card" id="stat-exp-top">
+                <div class="stat-label">Highest Rated Group</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-exp-most">
+                <div class="stat-label">Most Common</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-exp-delta">
+                <div class="stat-label">Rating Trend</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+            </div>
             <div class="chart-card">
               <div class="chart-card-header">
-                <div class="chart-card-title">Avg Rating: With vs Without Expansions</div>
+                <div class="chart-card-title">Avg Rating by Number of Expansions</div>
               </div>
               <div class="chart-body">
                 <div class="bar-list" id="bars-expansions"></div>
@@ -194,9 +258,26 @@
             </div>
           </div>
 
-          <!-- VIEW 6 -->
+          <!-- VIEW 5 -->
           <div class="secondary-panel" id="view-teamsize">
             <div class="panel-heading">Rating of Games by Team Size</div>
+            <div class="stats-row">
+              <div class="stat-card" id="stat-ts-top">
+                <div class="stat-label">Best Rated Size</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-ts-most">
+                <div class="stat-label">Most Common</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-ts-gap">
+                <div class="stat-label">Solo Premium</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+            </div>
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-title">Avg Rating by Max Player Count</div>
@@ -207,9 +288,26 @@
             </div>
           </div>
 
-          <!-- VIEW 7 -->
+          <!-- VIEW 6 -->
           <div class="secondary-panel" id="view-playtime">
             <div class="panel-heading">Rating of Games by Average Playtime</div>
+            <div class="stats-row">
+              <div class="stat-card" id="stat-pt-top">
+                <div class="stat-label">Best Rated Bracket</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-pt-most">
+                <div class="stat-label">Most Games</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-pt-gap">
+                <div class="stat-label">Playtime Premium</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+            </div>
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-title">Avg Rating by Playtime Bracket</div>
@@ -223,6 +321,23 @@
           <!-- VIEW 8 -->
           <div class="secondary-panel" id="view-byyear">
             <div class="panel-heading">Rating of Games by Year of Release</div>
+            <div class="stats-row">
+              <div class="stat-card" id="stat-yr-best">
+                <div class="stat-label">Best Vintage</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-yr-worst">
+                <div class="stat-label">Weakest Year</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+              <div class="stat-card" id="stat-yr-busy">
+                <div class="stat-label">Most Releases</div>
+                <div class="stat-value">—</div>
+                <div class="stat-sub">—</div>
+              </div>
+            </div>
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-title">Avg Rating by Year (1970–2016)</div>
@@ -235,22 +350,125 @@
 
           <!-- VIEW 9 -->
           <div class="secondary-panel" id="view-distribution">
-            <div class="panel-heading">Distribution of Games</div>
-            <div class="two-col">
-              <div class="chart-card">
-                <div class="chart-card-header"><div class="chart-card-title">By Genre</div></div>
-                <div class="chart-body"><div class="bar-list" id="bars-distgenre"></div></div>
+            <div class="panel-heading">
+              Distribution of Games
+              <button class="info-btn" onclick="openInfoModal('modal-distribution')" title="How to explore this chart">
+                i
+              </button>
+            </div>
+
+            <!-- modal -->
+            <div class="info-modal-overlay" id="modal-distribution" onclick="closeInfoModal('modal-distribution')">
+              <div class="info-modal" onclick="event.stopPropagation()">
+                <div class="info-modal-header">
+                  <span class="dist-instructions-title">How to read this section</span>
+                  <button class="info-modal-close" onclick="closeInfoModal('modal-distribution')">✕</button>
+                </div>
+                <div class="dist-instructions-steps">
+                  <div class="dist-step">
+                    <div class="dist-step-num">1</div>
+                    <div class="dist-step-text">
+                      <strong>Click any genre bar</strong> on the left to see how games in that category break down by
+                      playtime — the bottom chart will update to reflect only those games.
+                    </div>
+                  </div>
+                  <div class="dist-step">
+                    <div class="dist-step-num">2</div>
+                    <div class="dist-step-text">
+                      <strong>Click any playtime bar</strong> on the bottom chart to filter the genre chart and discover
+                      which categories dominate that session length.
+                    </div>
+                  </div>
+                  <div class="dist-step">
+                    <div class="dist-step-num">3</div>
+                    <div class="dist-step-text">
+                      <strong>Click the same bar again</strong> to deselect it and return both charts to the full
+                      dataset. Or use <em>Clear filter</em> to reset at any time.
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="chart-card">
-                <div class="chart-card-header"><div class="chart-card-title">By Playtime</div></div>
-                <div class="chart-body"><div class="bar-list" id="bars-distplaytime"></div></div>
+            </div>
+
+            <!-- filter state: breadcrumb + reset — kept inline, not in modal -->
+            <div class="dist-filter-bar">
+              <span id="dist-breadcrumb" class="dist-breadcrumb"></span>
+              <button id="dist-reset" onclick="resetDistribution()">✕ Clear filter</button>
+            </div>
+
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">By Genre</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-distgenre"></div>
+              </div>
+            </div>
+            <div class="chart-card">
+              <div class="chart-card-header">
+                <div class="chart-card-title">By Playtime</div>
+              </div>
+              <div class="chart-body">
+                <div class="bar-list" id="bars-distplaytime"></div>
               </div>
             </div>
           </div>
 
           <!-- VIEW 10 -->
           <div class="secondary-panel" id="view-correlation">
-            <div class="panel-heading">Mechanics × Categories × Ratings</div>
+            <div class="panel-heading">
+              Mechanics × Categories × Ratings
+              <button class="info-btn" onclick="openInfoModal('modal-correlation')" title="How to read this section">
+                i
+              </button>
+            </div>
+
+            <!-- modal -->
+            <div class="info-modal-overlay" id="modal-correlation" onclick="closeInfoModal('modal-correlation')">
+              <div class="info-modal" onclick="event.stopPropagation()">
+                <div class="info-modal-header">
+                  <span class="dist-instructions-title">How to read this section</span>
+                  <button class="info-modal-close" onclick="closeInfoModal('modal-correlation')">✕</button>
+                </div>
+                <div class="dist-instructions-steps">
+                  <div class="dist-step">
+                    <div class="dist-step-num">1</div>
+                    <div class="dist-step-text">
+                      <strong>Heatmap shows Mechanic × Category relation.</strong> Each cell shows the average community
+                      rating for games that combine a specific mechanic (rows) with a specific category (columns).
+                      Darker green means a higher average rating.
+                      <p>
+                        <strong>Note:</strong> the scale runs from the lowest to the highest value found in the data, so
+                        colours are relative to this chart only.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dist-step">
+                    <div class="dist-step-num">2</div>
+                    <div class="dist-step-text">
+                      <strong>A dash (—) means no data.</strong> That mechanic and category combination had fewer than 5
+                      games in the dataset, so no reliable average could be computed.
+                    </div>
+                  </div>
+                  <div class="dist-step">
+                    <div class="dist-step-num">3</div>
+                    <div class="dist-step-text">
+                      <strong>Dot plot represents Top combinations.</strong> The chart below ranks the eight
+                      highest-rated mechanic–category pairs. The horizontal axis is scaled tightly around the actual
+                      value range, so small differences between dots are meaningful.
+                    </div>
+                  </div>
+                  <div class="dist-step">
+                    <div class="dist-step-text">
+                      <strong>HINT: What to look for?</strong> Combinations that score consistently above 7.0 tend to be
+                      niche, highly-engaged audiences. A mechanic that scores high across multiple categories (entire
+                      row is dark) is a strong design signal — players reward it regardless of theme.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-title">Mechanic × Category Heatmap</div>
@@ -261,6 +479,7 @@
                 </div>
               </div>
             </div>
+
             <div class="chart-card">
               <div class="chart-card-header">
                 <div class="chart-card-title">Top Mechanic–Category Combinations</div>
@@ -274,11 +493,30 @@
       </main>
     </div>
 
-    <div class="tooltip" id="tooltip">
-      <div class="tt-name" id="tt-name"></div>
-      <div class="tt-row"><span class="tt-label">Rating</span><span class="tt-val" id="tt-rating"></span></div>
-      <div class="tt-row"><span class="tt-label">Genre</span><span class="tt-val" id="tt-genre"></span></div>
-      <div class="tt-row"><span class="tt-label">Votes</span><span class="tt-val" id="tt-votes"></span></div>
+    <!-- remove old #tooltip, replace with: -->
+    <div id="bubble-tooltip" class="bubble-tooltip">
+      <button class="bt-pin-btn" id="bt-pin-btn">Pin ✚</button>
+      <div class="bt-body">
+        <img class="bt-thumb" id="bt-thumb" src="" alt="" />
+        <div class="bt-info">
+          <div class="bt-name" id="bt-name"></div>
+          <div class="bt-genre" id="bt-genre"></div>
+          <div class="bt-meta">
+            <span class="bt-rating" id="bt-rating"></span>
+            <span class="bt-year" id="bt-year"></span>
+          </div>
+          <div class="bt-votes" id="bt-votes"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pinned comparison panel -->
+    <div id="pin-panel" class="pin-panel">
+      <div class="pin-panel-header">
+        <span>Comparing</span>
+        <button onclick="clearPins()">✕ Clear</button>
+      </div>
+      <div id="pin-cards" class="pin-cards"></div>
     </div>
 
     <script type="module" src="./script.js"></script>

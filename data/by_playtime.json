@@ -2,26 +2,96 @@
   {
     "label": "Under 30 min",
     "avg": 6.1276,
-    "count": 1308
+    "count": 1308,
+    "top3": [
+      {
+        "name": "BattleCON: Fate of Indines",
+        "rating": 8.29
+      },
+      {
+        "name": "Santorini",
+        "rating": 8.08
+      },
+      {
+        "name": "Star Realms: Colony Wars",
+        "rating": 7.97
+      }
+    ]
   },
   {
     "label": "30–60 min",
     "avg": 6.3427,
-    "count": 2394
+    "count": 2394,
+    "top3": [
+      {
+        "name": "Codex: Card-Time Strategy – Deluxe Set",
+        "rating": 8.47
+      },
+      {
+        "name": "Summoner Wars: Alliances Master Set",
+        "rating": 8.34
+      },
+      {
+        "name": "Hoplomachus: Rise of Rome",
+        "rating": 8.28
+      }
+    ]
   },
   {
     "label": "1–2 hours",
     "avg": 6.5578,
-    "count": 1969
+    "count": 1969,
+    "top3": [
+      {
+        "name": "Small World Designer Edition",
+        "rating": 9
+      },
+      {
+        "name": "Pandemic Legacy: Season 1",
+        "rating": 8.67
+      },
+      {
+        "name": "Viticulture: Complete Collector's Edition",
+        "rating": 8.46
+      }
+    ]
   },
   {
     "label": "2–4 hours",
     "avg": 6.8794,
-    "count": 985
+    "count": 985,
+    "top3": [
+      {
+        "name": "Kingdom Death: Monster",
+        "rating": 8.93
+      },
+      {
+        "name": "Terra Mystica: Big Box",
+        "rating": 8.85
+      },
+      {
+        "name": "War of the Ring Collector's Edition",
+        "rating": 8.61
+      }
+    ]
   },
   {
     "label": "4+ hours",
     "avg": 7.1081,
-    "count": 461
+    "count": 461,
+    "top3": [
+      {
+        "name": "Enemy Action: Ardennes",
+        "rating": 8.76
+      },
+      {
+        "name": "Through the Ages: A New Story of Civilization",
+        "rating": 8.74
+      },
+      {
+        "name": "1817",
+        "rating": 8.71
+      }
+    ]
   }
 ]

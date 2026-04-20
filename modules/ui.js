@@ -2,9 +2,11 @@
  * UI and view switching
  */
 import { TOP_GAMES, DATA, COLORS } from './dataLoader.js';
-import { buildBars } from './barChart.js';
+import { buildBars, buildTeamSizeBars, buildPlaytimeBars } from './barChart.js';
 import { buildHeatmap } from './heatmap.js';
 import { drawYearLine } from './yearLine.js';
+import { buildDistributionBars, resetDistribution } from './distribution.js';
+import { buildDotPlot } from './dotChart.js';
 
 export const TITLES = {
   bubbles: 'Game Popularity — Bubble Map',
@@ -60,80 +62,17 @@ export function populate() {
     8.0,
   );
 
-  //chart 4: Expansions
-  buildBars(
-    'bars-expansions',
-    DATA.expansions.map((d, i) => ({
-      name: d.label,
-      val: d.avg,
-      label: fmt(d.avg),
-      color: i === 0 ? '#2d6a4f' : '#aaa',
-    })),
-    8.0,
-  );
-
   //chart 5: Rating by team size
-  const playerLabels = ['Solo', '2p', '3p', '4p', '5p', '6p', '7p', '8p'];
-  buildBars(
-    'bars-teamsize',
-    DATA.byTeamSize.map((d, i) => ({
-      name: `${playerLabels[i] || d.max_players + 'p'} – ${d.max_players} player${d.max_players > 1 ? 's' : ''} (${d.count.toLocaleString()})`,
-      val: d.avg,
-      label: fmt(d.avg),
-      color: col(i),
-    })),
-    8.0,
-  );
+  buildTeamSizeBars('bars-teamsize', DATA.byTeamSize);
 
   //chart 6: Rating by playtime
-  buildBars(
-    'bars-playtime',
-    DATA.byPlaytime.map((d, i) => ({
-      name: `${d.label} (${d.count.toLocaleString()} games)`,
-      val: d.avg,
-      label: fmt(d.avg),
-      color: col(i),
-    })),
-    8.0,
-  );
+  buildPlaytimeBars('bars-playtime', DATA.byPlaytime);
 
   //chart 8: Distribution — genre
-  const { categoryDist, playtimeDist } = DATA.distribution;
-  const catTotal = categoryDist.reduce((s, d) => s + d.count, 0);
-  buildBars(
-    'bars-distgenre',
-    categoryDist.slice(0, 10).map((d, i) => ({
-      name: d.category,
-      val: d.count,
-      label: `${d.count.toLocaleString()} · ${Math.round((d.count / catTotal) * 100)}%`,
-      color: COLORS[d.category] || col(i),
-    })),
-  );
+  buildDistributionBars();
+  window.resetDistribution = resetDistribution;
 
-  const ptTotal = playtimeDist.reduce((s, d) => s + d.count, 0);
-  buildBars(
-    'bars-distplaytime',
-    playtimeDist.map((d, i) => ({
-      name: d.label,
-      val: d.count,
-      label: `${d.count.toLocaleString()} · ${Math.round((d.count / ptTotal) * 100)}%`,
-      color: col(i),
-    })),
-  );
-
-  const tc = d3.select('#tag-cloud');
-  tc.selectAll('*').remove();
-  categoryDist.slice(0, 28).forEach((d, i) => {
-    const c = COLORS[d.category] || col(i);
-    tc.append('span')
-      .attr('class', 'tag')
-      .style('border-color', `${c}28`)
-      .style('background', `${c}0a`)
-      .style('color', `${c}bb`)
-      .text(d.category);
-  });
-
-  //chart 9: Mechanic × Category correlation
+  // chart 9: Mechanic × Category correlation
   const { mechs, cats, matrix } = DATA.heatmap;
   const combos = [];
   matrix.forEach((row, ri) => {
@@ -143,10 +82,9 @@ export function populate() {
   });
   combos.sort((a, b) => b.val - a.val);
 
-  buildBars(
+  buildDotPlot(
     'bars-correlation',
     combos.slice(0, 8).map((d, i) => ({ ...d, color: col(i) })),
-    8.0,
   );
 
   buildHeatmap();

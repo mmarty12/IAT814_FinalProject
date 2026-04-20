@@ -1,12 +1,38 @@
 [
   {
-    "label": "With Expansions",
-    "avg": 6.4868,
-    "count": 7267
-  },
-  {
-    "label": "Without Expansions",
+    "label": "No expansions",
+    "expansionCount": 0,
     "avg": 0,
     "count": 0
+  },
+  {
+    "label": "1 expansion",
+    "expansionCount": 1,
+    "avg": 6.3705,
+    "count": 5841
+  },
+  {
+    "label": "2 expansions",
+    "expansionCount": 2,
+    "avg": 6.7752,
+    "count": 441
+  },
+  {
+    "label": "3 expansions",
+    "expansionCount": 3,
+    "avg": 6.8721,
+    "count": 242
+  },
+  {
+    "label": "4 expansions",
+    "expansionCount": 4,
+    "avg": 6.9881,
+    "count": 155
+  },
+  {
+    "label": "5+ expansions",
+    "expansionCount": 5,
+    "avg": 7.1348,
+    "count": 588
   }
 ]

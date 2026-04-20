@@ -2,41 +2,153 @@
   {
     "max_players": 1,
     "avg": 7.3281,
-    "count": 67
+    "count": 67,
+    "top3": [
+      {
+        "name": "The U.S. Civil War",
+        "rating": 8.45
+      },
+      {
+        "name": "Comanchería: The Rise and Fall of the Comanche Empire",
+        "rating": 8.41
+      },
+      {
+        "name": "DAK2",
+        "rating": 8.24
+      }
+    ]
   },
   {
     "max_players": 2,
     "avg": 6.9381,
-    "count": 1473
+    "count": 1473,
+    "top3": [
+      {
+        "name": "Kingdom Death: Monster",
+        "rating": 8.93
+      },
+      {
+        "name": "Terra Mystica: Big Box",
+        "rating": 8.85
+      },
+      {
+        "name": "Through the Ages: A New Story of Civilization",
+        "rating": 8.74
+      }
+    ]
   },
   {
     "max_players": 3,
     "avg": 7.0029,
-    "count": 116
+    "count": 116,
+    "top3": [
+      {
+        "name": "El Grande Decennial Edition",
+        "rating": 8.34
+      },
+      {
+        "name": "Band of Brothers:  Ghost Panzer",
+        "rating": 8.23
+      },
+      {
+        "name": "Fallen",
+        "rating": 8.18
+      }
+    ]
   },
   {
     "max_players": 4,
     "avg": 6.5124,
-    "count": 2317
+    "count": 2317,
+    "top3": [
+      {
+        "name": "Small World Designer Edition",
+        "rating": 9
+      },
+      {
+        "name": "Pandemic Legacy: Season 1",
+        "rating": 8.67
+      },
+      {
+        "name": "Codex: Card-Time Strategy – Deluxe Set",
+        "rating": 8.47
+      }
+    ]
   },
   {
     "max_players": 5,
     "avg": 6.4094,
-    "count": 1106
+    "count": 1106,
+    "top3": [
+      {
+        "name": "Hoplomachus: Rise of Rome",
+        "rating": 8.28
+      },
+      {
+        "name": "Dominion (Second Edition)",
+        "rating": 8.25
+      },
+      {
+        "name": "7 Wonders Duel",
+        "rating": 8.19
+      }
+    ]
   },
   {
     "max_players": 6,
     "avg": 6.0791,
-    "count": 1394
+    "count": 1394,
+    "top3": [
+      {
+        "name": "Santorini",
+        "rating": 8.08
+      },
+      {
+        "name": "Lock 'n Load: Heroes of the Blitzkrieg",
+        "rating": 8.02
+      },
+      {
+        "name": "Star Realms: Colony Wars",
+        "rating": 7.97
+      }
+    ]
   },
   {
     "max_players": 7,
     "avg": 6.3718,
-    "count": 130
+    "count": 130,
+    "top3": [
+      {
+        "name": "BattleCON: Fate of Indines",
+        "rating": 8.29
+      },
+      {
+        "name": "Hanamikoji",
+        "rating": 7.65
+      },
+      {
+        "name": "Coup: Deluxe Edition",
+        "rating": 7.48
+      }
+    ]
   },
   {
     "max_players": 8,
     "avg": 6.041,
-    "count": 365
+    "count": 365,
+    "top3": [
+      {
+        "name": "BattleCON: War of Indines",
+        "rating": 7.86
+      },
+      {
+        "name": "Escape: The Curse of the Temple – Big Box",
+        "rating": 7.75
+      },
+      {
+        "name": "KLASK",
+        "rating": 7.66
+      }
+    ]
   }
 ]

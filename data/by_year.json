@@ -2,236 +2,706 @@
   {
     "year": 1970,
     "avg": 5.702,
-    "count": 13
+    "count": 13,
+    "top2": [
+      {
+        "name": "Paydirt",
+        "rating": 6.87
+      },
+      {
+        "name": "NFL Strategy",
+        "rating": 6.71
+      }
+    ]
   },
   {
     "year": 1971,
     "avg": 5.7535,
-    "count": 18
+    "count": 18,
+    "top2": [
+      {
+        "name": "Statis Pro Baseball",
+        "rating": 7.04
+      },
+      {
+        "name": "Sleuth",
+        "rating": 6.89
+      }
+    ]
   },
   {
     "year": 1972,
     "avg": 5.812,
-    "count": 27
+    "count": 27,
+    "top2": [
+      {
+        "name": "What's My Word?",
+        "rating": 7.16
+      },
+      {
+        "name": "Winter War",
+        "rating": 7.08
+      }
+    ]
   },
   {
     "year": 1973,
     "avg": 5.9342,
-    "count": 30
+    "count": 30,
+    "top2": [
+      {
+        "name": "Montage",
+        "rating": 7.17
+      },
+      {
+        "name": "War of 1812",
+        "rating": 7
+      }
+    ]
   },
   {
     "year": 1974,
     "avg": 6.3143,
-    "count": 26
+    "count": 26,
+    "top2": [
+      {
+        "name": "Bar-Lev: The Yom-Kippur War of 1973",
+        "rating": 7.33
+      },
+      {
+        "name": "Napoleon: The Waterloo Campaign, 1815",
+        "rating": 7.31
+      }
+    ]
   },
   {
     "year": 1975,
     "avg": 5.8955,
-    "count": 40
+    "count": 40,
+    "top2": [
+      {
+        "name": "Epaminondas",
+        "rating": 7.19
+      },
+      {
+        "name": "Battle for Germany",
+        "rating": 7.08
+      }
+    ]
   },
   {
     "year": 1976,
     "avg": 6.2197,
-    "count": 30
+    "count": 30,
+    "top2": [
+      {
+        "name": "Terrible Swift Sword",
+        "rating": 7.27
+      },
+      {
+        "name": "Panzergruppe Guderian",
+        "rating": 7.24
+      }
+    ]
   },
   {
     "year": 1977,
     "avg": 6.1205,
-    "count": 56
+    "count": 56,
+    "top2": [
+      {
+        "name": "La Bataille d'Auerstædt",
+        "rating": 7.6
+      },
+      {
+        "name": "Squad Leader",
+        "rating": 7.47
+      }
+    ]
   },
   {
     "year": 1978,
     "avg": 6.2404,
-    "count": 36
+    "count": 36,
+    "top2": [
+      {
+        "name": "La Bataille de Preussisch-Eylau",
+        "rating": 7.66
+      },
+      {
+        "name": "The Next War",
+        "rating": 7.39
+      }
+    ]
   },
   {
     "year": 1979,
     "avg": 6.2467,
-    "count": 52
+    "count": 52,
+    "top2": [
+      {
+        "name": "Dune",
+        "rating": 7.61
+      },
+      {
+        "name": "White Death",
+        "rating": 7.6
+      }
+    ]
   },
   {
     "year": 1980,
     "avg": 6.3425,
-    "count": 49
+    "count": 49,
+    "top2": [
+      {
+        "name": "Civilization",
+        "rating": 7.52
+      },
+      {
+        "name": "88",
+        "rating": 7.29
+      }
+    ]
   },
   {
     "year": 1981,
     "avg": 6.2679,
-    "count": 61
+    "count": 61,
+    "top2": [
+      {
+        "name": "Sherlock Holmes Consulting Detective: The Thames Murders & Other Cases",
+        "rating": 7.85
+      },
+      {
+        "name": "The Desert Fox",
+        "rating": 7.23
+      }
+    ]
   },
   {
     "year": 1982,
     "avg": 6.2097,
-    "count": 32
+    "count": 32,
+    "top2": [
+      {
+        "name": "Rommel in the Desert",
+        "rating": 7.54
+      },
+      {
+        "name": "Western Desert",
+        "rating": 7.4
+      }
+    ]
   },
   {
     "year": 1983,
     "avg": 6.2534,
-    "count": 47
+    "count": 47,
+    "top2": [
+      {
+        "name": "Up Front",
+        "rating": 7.84
+      },
+      {
+        "name": "The Civil War",
+        "rating": 7.67
+      }
+    ]
   },
   {
     "year": 1984,
     "avg": 6.2775,
-    "count": 32
+    "count": 32,
+    "top2": [
+      {
+        "name": "The Third World War",
+        "rating": 7.76
+      },
+      {
+        "name": "Eat Poop You Cat",
+        "rating": 7.48
+      }
+    ]
   },
   {
     "year": 1985,
     "avg": 6.3809,
-    "count": 45
+    "count": 45,
+    "top2": [
+      {
+        "name": "Advanced Squad Leader",
+        "rating": 7.94
+      },
+      {
+        "name": "Pacific War",
+        "rating": 7.53
+      }
+    ]
   },
   {
     "year": 1986,
     "avg": 6.3173,
-    "count": 61
+    "count": 61,
+    "top2": [
+      {
+        "name": "1830: Railways & Robber Barons",
+        "rating": 7.81
+      },
+      {
+        "name": "Die Macher",
+        "rating": 7.67
+      }
+    ]
   },
   {
     "year": 1987,
     "avg": 6.1738,
-    "count": 54
+    "count": 54,
+    "top2": [
+      {
+        "name": "Raid on St. Nazaire",
+        "rating": 7.08
+      },
+      {
+        "name": "7th Fleet",
+        "rating": 7.07
+      }
+    ]
   },
   {
     "year": 1988,
     "avg": 6.0088,
-    "count": 59
+    "count": 59,
+    "top2": [
+      {
+        "name": "Angola",
+        "rating": 7.99
+      },
+      {
+        "name": "Full Metal Planète",
+        "rating": 7.44
+      }
+    ]
   },
   {
     "year": 1989,
     "avg": 6.2367,
-    "count": 51
+    "count": 51,
+    "top2": [
+      {
+        "name": "Space Hulk",
+        "rating": 7.46
+      },
+      {
+        "name": "Hotel Life",
+        "rating": 7.37
+      }
+    ]
   },
   {
     "year": 1990,
     "avg": 6.1813,
-    "count": 65
+    "count": 65,
+    "top2": [
+      {
+        "name": "Fire and Fury",
+        "rating": 7.63
+      },
+      {
+        "name": "The Republic of Rome",
+        "rating": 7.55
+      }
+    ]
   },
   {
     "year": 1991,
     "avg": 6.3098,
-    "count": 74
+    "count": 74,
+    "top2": [
+      {
+        "name": "La Bataille des Quatre Bras",
+        "rating": 7.92
+      },
+      {
+        "name": "The Legend Begins",
+        "rating": 7.74
+      }
+    ]
   },
   {
     "year": 1992,
     "avg": 6.2014,
-    "count": 90
+    "count": 90,
+    "top2": [
+      {
+        "name": "Breakout: Normandy",
+        "rating": 7.66
+      },
+      {
+        "name": "Stonewall Jackson's Way",
+        "rating": 7.53
+      }
+    ]
   },
   {
     "year": 1993,
     "avg": 6.2242,
-    "count": 78
+    "count": 78,
+    "top2": [
+      {
+        "name": "Roads to Gettysburg",
+        "rating": 7.72
+      },
+      {
+        "name": "Thunder at the Crossroads (second edition)",
+        "rating": 7.69
+      }
+    ]
   },
   {
     "year": 1994,
     "avg": 6.272,
-    "count": 77
+    "count": 77,
+    "top2": [
+      {
+        "name": "1841",
+        "rating": 7.74
+      },
+      {
+        "name": "Enemy at the Gates",
+        "rating": 7.59
+      }
+    ]
   },
   {
     "year": 1995,
     "avg": 6.3851,
-    "count": 87
+    "count": 87,
+    "top2": [
+      {
+        "name": "El Grande",
+        "rating": 7.8
+      },
+      {
+        "name": "The Great Battles of Alexander: Deluxe Edition",
+        "rating": 7.73
+      }
+    ]
   },
   {
     "year": 1996,
     "avg": 6.1596,
-    "count": 83
+    "count": 83,
+    "top2": [
+      {
+        "name": "Barbarossa: Army Group South, 1941",
+        "rating": 7.92
+      },
+      {
+        "name": "Hannibal: Rome vs. Carthage",
+        "rating": 7.83
+      }
+    ]
   },
   {
     "year": 1997,
     "avg": 6.1917,
-    "count": 89
+    "count": 89,
+    "top2": [
+      {
+        "name": "DAK",
+        "rating": 8
+      },
+      {
+        "name": "Close Action",
+        "rating": 7.82
+      }
+    ]
   },
   {
     "year": 1998,
     "avg": 6.1538,
-    "count": 113
+    "count": 113,
+    "top2": [
+      {
+        "name": "This Hallowed Ground",
+        "rating": 7.98
+      },
+      {
+        "name": "Barbarossa: Army Group Center, 1941",
+        "rating": 7.9
+      }
+    ]
   },
   {
     "year": 1999,
     "avg": 6.2502,
-    "count": 137
+    "count": 137,
+    "top2": [
+      {
+        "name": "Paths of Glory",
+        "rating": 8.03
+      },
+      {
+        "name": "Burma",
+        "rating": 7.86
+      }
+    ]
   },
   {
     "year": 2000,
     "avg": 6.1892,
-    "count": 143
+    "count": 143,
+    "top2": [
+      {
+        "name": "Barbarossa: Army Group North, 1941",
+        "rating": 7.98
+      },
+      {
+        "name": "Sicily: Triumph and Folly",
+        "rating": 7.8
+      }
+    ]
   },
   {
     "year": 2001,
     "avg": 6.134,
-    "count": 181
+    "count": 181,
+    "top2": [
+      {
+        "name": "Guderian's Blitzkrieg II",
+        "rating": 8.05
+      },
+      {
+        "name": "Grant Takes Command",
+        "rating": 7.93
+      }
+    ]
   },
   {
     "year": 2002,
     "avg": 6.1474,
-    "count": 190
+    "count": 190,
+    "top2": [
+      {
+        "name": "Puerto Rico",
+        "rating": 8.09
+      },
+      {
+        "name": "The Killing Ground",
+        "rating": 7.95
+      }
+    ]
   },
   {
     "year": 2003,
     "avg": 6.2518,
-    "count": 220
+    "count": 220,
+    "top2": [
+      {
+        "name": "1844: Switzerland",
+        "rating": 8.37
+      },
+      {
+        "name": "Whistling Death",
+        "rating": 8.19
+      }
+    ]
   },
   {
     "year": 2004,
     "avg": 6.2655,
-    "count": 268
+    "count": 268,
+    "top2": [
+      {
+        "name": "DAK2",
+        "rating": 8.24
+      },
+      {
+        "name": "Power Grid",
+        "rating": 7.94
+      }
+    ]
   },
   {
     "year": 2005,
     "avg": 6.3482,
-    "count": 278
+    "count": 278,
+    "top2": [
+      {
+        "name": "Twilight Struggle",
+        "rating": 8.36
+      },
+      {
+        "name": "Infinity",
+        "rating": 8.1
+      }
+    ]
   },
   {
     "year": 2006,
     "avg": 6.3484,
-    "count": 262
+    "count": 262,
+    "top2": [
+      {
+        "name": "El Grande Decennial Edition",
+        "rating": 8.34
+      },
+      {
+        "name": "Through the Ages: A Story of Civilization",
+        "rating": 8.09
+      }
+    ]
   },
   {
     "year": 2007,
     "avg": 6.3754,
-    "count": 275
+    "count": 275,
+    "top2": [
+      {
+        "name": "Funkenschlag: EnBW",
+        "rating": 8.31
+      },
+      {
+        "name": "Case Blue",
+        "rating": 8.18
+      }
+    ]
   },
   {
     "year": 2008,
     "avg": 6.4545,
-    "count": 322
+    "count": 322,
+    "top2": [
+      {
+        "name": "The Devil's Cauldron: The Battles for Arnhem and Nijmegen",
+        "rating": 8.18
+      },
+      {
+        "name": "Combat Commander: Pacific",
+        "rating": 8.1
+      }
+    ]
   },
   {
     "year": 2009,
     "avg": 6.5162,
-    "count": 336
+    "count": 336,
+    "top2": [
+      {
+        "name": "D-Day at Omaha Beach",
+        "rating": 8.23
+      },
+      {
+        "name": "Liberty Roads",
+        "rating": 8.13
+      }
+    ]
   },
   {
     "year": 2010,
     "avg": 6.64,
-    "count": 364
+    "count": 364,
+    "top2": [
+      {
+        "name": "1817",
+        "rating": 8.71
+      },
+      {
+        "name": "War of the Ring Collector's Edition",
+        "rating": 8.61
+      }
+    ]
   },
   {
     "year": 2011,
     "avg": 6.6338,
-    "count": 360
+    "count": 360,
+    "top2": [
+      {
+        "name": "La Bataille de la Moscowa (third edition)",
+        "rating": 8.6
+      },
+      {
+        "name": "Puerto Rico: Limited Anniversary Edition",
+        "rating": 8.52
+      }
+    ]
   },
   {
     "year": 2012,
     "avg": 6.6763,
-    "count": 432
+    "count": 432,
+    "top2": [
+      {
+        "name": "War of the Ring (Second Edition)",
+        "rating": 8.38
+      },
+      {
+        "name": "Terra Mystica",
+        "rating": 8.29
+      }
+    ]
   },
   {
     "year": 2013,
     "avg": 6.698,
-    "count": 428
+    "count": 428,
+    "top2": [
+      {
+        "name": "Stonewall Jackson's Way II",
+        "rating": 8.42
+      },
+      {
+        "name": "Malifaux (second edition)",
+        "rating": 8.36
+      }
+    ]
   },
   {
     "year": 2014,
     "avg": 6.8579,
-    "count": 447
+    "count": 447,
+    "top2": [
+      {
+        "name": "Advanced Squad Leader: Starter Kit Historical Module 1 – Decision at Elst",
+        "rating": 8.48
+      },
+      {
+        "name": "Viticulture: Complete Collector's Edition",
+        "rating": 8.46
+      }
+    ]
   },
   {
     "year": 2015,
     "avg": 6.9787,
-    "count": 525
+    "count": 525,
+    "top2": [
+      {
+        "name": "Small World Designer Edition",
+        "rating": 9
+      },
+      {
+        "name": "Kingdom Death: Monster",
+        "rating": 8.93
+      }
+    ]
   },
   {
     "year": 2016,
     "avg": 7.2011,
-    "count": 390
+    "count": 390,
+    "top2": [
+      {
+        "name": "Star Wars: Rebellion",
+        "rating": 8.54
+      },
+      {
+        "name": "Vinhos Deluxe Edition",
+        "rating": 8.48
+      }
+    ]
   }
 ]
