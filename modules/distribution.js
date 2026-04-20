@@ -1,17 +1,6 @@
 /**
- * distribution.js
- * Linked bar charts — clicking a genre bar filters the playtime bars
- * and vice versa. Uses DATA.distribution (categoryDist, playtimeDist, cross).
- *
- * Call buildDistributionBars() once after data loads.
- *
- * HTML required:
- *   <div class="bar-list" id="bars-distgenre"></div>
- *   <div class="bar-list" id="bars-distplaytime"></div>
- *   <div id="dist-reset" style="display:none">...</div>
- *   <span id="dist-breadcrumb"></span>
+ * Distribution visualization
  */
-
 import { DATA, COLORS } from './dataLoader.js';
 import { buildBars } from './barChart.js';
 
@@ -23,19 +12,13 @@ const PT_COLORS = {
   '4+ hours': '#6d3fa0',
 };
 
-// ── STATE ─────────────────────────────────────────────────────────────────────
-
 let selectedCat = null;
 let selectedPt = null;
-
-// ── PUBLIC ENTRY POINT ────────────────────────────────────────────────────────
 
 export function buildDistributionBars() {
   renderGenreBars(DATA.distribution.categoryDist);
   renderPlaytimeBars(DATA.distribution.playtimeDist);
 }
-
-// ── RENDERERS ─────────────────────────────────────────────────────────────────
 
 function renderGenreBars(data, highlight = null) {
   const total = d3.sum(data, (d) => d.count);
@@ -85,8 +68,6 @@ function renderPlaytimeBars(data, highlight = null) {
       .on('click', () => onPlaytimeClick(label));
   });
 }
-
-// ── CLICK HANDLERS ────────────────────────────────────────────────────────────
 
 function onGenreClick(cat) {
   // clicking the active selection deselects
@@ -144,8 +125,6 @@ function onPlaytimeClick(ptLabel) {
   updateBreadcrumb(selectedCat, ptLabel);
 }
 
-// ── RESET ─────────────────────────────────────────────────────────────────────
-
 export function resetDistribution() {
   selectedCat = null;
   selectedPt = null;
@@ -154,8 +133,6 @@ export function resetDistribution() {
   setResetVisible(false);
   updateBreadcrumb(null, null);
 }
-
-// ── UI HELPERS ────────────────────────────────────────────────────────────────
 
 function setResetVisible(visible) {
   const btn = document.getElementById('dist-reset');

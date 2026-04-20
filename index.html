@@ -97,7 +97,7 @@
         </div>
 
         <div class="content">
-          <!-- BUBBLE VIEW -->
+          <!-- Bubble Map-->
           <div class="info-modal-overlay" id="modal-bubbles" onclick="closeInfoModal('modal-bubbles')">
             <div class="info-modal" onclick="event.stopPropagation()">
               <div class="info-modal-header">
@@ -137,7 +137,7 @@
             <svg id="bubbleSvg" style="width: 100%; height: 100%; display: block"></svg>
           </div>
 
-          <!-- VIEW 1 -->
+          <!-- Rating of Games by Name -->
           <div class="secondary-panel" id="view-byname">
             <div class="panel-heading">Rating of Games by Name</div>
             <div class="stats-row">
@@ -167,7 +167,7 @@
             </div>
           </div>
 
-          <!-- VIEW 2 -->
+          <!-- Rating of Games by Category -->
           <div class="secondary-panel" id="view-bycategory">
             <div class="panel-heading">Rating of Games by Category</div>
             <div class="stats-row">
@@ -197,7 +197,7 @@
             </div>
           </div>
 
-          <!-- VIEW 3 -->
+          <!-- Rating of Games by Mechanic -->
           <div class="secondary-panel" id="view-bymechanic">
             <div class="panel-heading">Rating of Games by Mechanic</div>
             <div class="stats-row">
@@ -227,7 +227,7 @@
             </div>
           </div>
 
-          <!-- VIEW 4 -->
+          <!-- Games with Expansions vs Ratings -->
           <div class="secondary-panel" id="view-expansions">
             <div class="panel-heading">Games with Expansions vs Ratings</div>
 
@@ -258,7 +258,7 @@
             </div>
           </div>
 
-          <!-- VIEW 5 -->
+          <!-- Rating of Games by Team Size -->
           <div class="secondary-panel" id="view-teamsize">
             <div class="panel-heading">Rating of Games by Team Size</div>
             <div class="stats-row">
@@ -288,7 +288,7 @@
             </div>
           </div>
 
-          <!-- VIEW 6 -->
+          <!-- Rating of Games by Average Playtime -->
           <div class="secondary-panel" id="view-playtime">
             <div class="panel-heading">Rating of Games by Average Playtime</div>
             <div class="stats-row">
@@ -318,7 +318,7 @@
             </div>
           </div>
 
-          <!-- VIEW 8 -->
+          <!-- Rating of Games by Year -->
           <div class="secondary-panel" id="view-byyear">
             <div class="panel-heading">Rating of Games by Year of Release</div>
             <div class="stats-row">
@@ -348,7 +348,7 @@
             </div>
           </div>
 
-          <!-- VIEW 9 -->
+          <!-- Distribution Map -->
           <div class="secondary-panel" id="view-distribution">
             <div class="panel-heading">
               Distribution of Games
@@ -357,7 +357,6 @@
               </button>
             </div>
 
-            <!-- modal -->
             <div class="info-modal-overlay" id="modal-distribution" onclick="closeInfoModal('modal-distribution')">
               <div class="info-modal" onclick="event.stopPropagation()">
                 <div class="info-modal-header">
@@ -390,7 +389,6 @@
               </div>
             </div>
 
-            <!-- filter state: breadcrumb + reset — kept inline, not in modal -->
             <div class="dist-filter-bar">
               <span id="dist-breadcrumb" class="dist-breadcrumb"></span>
               <button id="dist-reset" onclick="resetDistribution()">✕ Clear filter</button>
@@ -414,7 +412,7 @@
             </div>
           </div>
 
-          <!-- VIEW 10 -->
+          <!-- Mechanic × Category Correlation -->
           <div class="secondary-panel" id="view-correlation">
             <div class="panel-heading">
               Mechanics × Categories × Ratings
@@ -423,7 +421,6 @@
               </button>
             </div>
 
-            <!-- modal -->
             <div class="info-modal-overlay" id="modal-correlation" onclick="closeInfoModal('modal-correlation')">
               <div class="info-modal" onclick="event.stopPropagation()">
                 <div class="info-modal-header">
@@ -493,9 +490,7 @@
       </main>
     </div>
 
-    <!-- remove old #tooltip, replace with: -->
     <div id="bubble-tooltip" class="bubble-tooltip">
-      <button class="bt-pin-btn" id="bt-pin-btn">Pin ✚</button>
       <div class="bt-body">
         <img class="bt-thumb" id="bt-thumb" src="" alt="" />
         <div class="bt-info">
