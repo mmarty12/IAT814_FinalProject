@@ -201,6 +201,7 @@ body {
   height: 100%;
   position: relative;
   background: var(--bg);
+  margin-left: -40px;
 }
 #bubbleCanvas {
   width: 100%;
@@ -765,9 +766,9 @@ body {
 /* ── pin panel ── */
 .pin-panel {
   position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 10px;
+  right: 20px;
+  left: auto;
   background: white;
   border: 1px solid #e8e4de;
   border-radius: 12px;
@@ -777,7 +778,7 @@ body {
   display: none;
   font-family: Inter, sans-serif;
   min-width: 360px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .pin-panel.visible {

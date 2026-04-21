@@ -122,12 +122,12 @@ function drawBubbles(W, H) {
       const color = COLORS[d.primaryGenre] || '#888';
       const { name: nameFSize, rating: ratingFSize } = fontSizes(d.r);
 
-      const usableWidth = d.r * 1.4;
-      const charWidth = nameFSize * 0.52;
+      const usableWidth = d.r * 1.2;
+      const charWidth = nameFSize * 0.58;
       let lines = wrapText(d.name, usableWidth, charWidth);
 
-      const ratingRowH = ratingFSize * 1.6;
-      const availableH = d.r * 1.5 - ratingRowH;
+      const ratingRowH = ratingFSize * 1.8;
+      const availableH = d.r * 1.3 - ratingRowH;
       const maxLines = Math.max(1, Math.floor(availableH / (nameFSize * 1.25)));
 
       // If too many lines, reduce font and re-wrap, or truncate last line
