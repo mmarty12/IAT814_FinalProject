@@ -16,7 +16,6 @@ async function initialize() {
   try {
     const { stats, byCategory, byMechanic, expansions, byTeamSize, byPlaytime, byYear } = await loadData();
 
-    // Populate statistics cards
     populateStats(stats);
     populateCategoryStats(byCategory);
     populateMechanicStats(byMechanic);
@@ -25,33 +24,48 @@ async function initialize() {
     populatePlaytimeStats(byPlaytime);
     populateYearStats(byYear);
 
-    // Setup bubble map interactions (tooltip, resize)
     setupBubbleInteractions();
     resizeBubbles();
     buildBubbleLegend();
 
-    // Render all charts
     populate();
+
+    // ← moved here — DOM is fully ready and nav items exist
+    document.querySelectorAll('.nav-item').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (window.innerWidth <= 768) window.closeSidebar();
+      });
+    });
   } catch (error) {
     console.error('Error initializing application:', error);
   }
 }
 
+// ── GLOBAL HANDLERS ───────────────────────────────────────────────────────────
+
 window.switchView = switchView;
 window.filterGenre = filterGenre;
-
-window.addEventListener('resize', () => {
-  resizeBubbles();
-  const yls = d3.select('#yearLineSvg');
-  if (!yls.empty() && yls.node().offsetParent) {
-    drawYearLine();
-  }
-});
 
 window.openInfoModal = (id) => document.getElementById(id)?.classList.add('open');
 window.closeInfoModal = (id) => document.getElementById(id)?.classList.remove('open');
 
-// close on Escape key
+window.toggleSidebar = () => {
+  document.querySelector('.sidebar').classList.toggle('open');
+  document.getElementById('sidebar-overlay').classList.toggle('visible');
+};
+window.closeSidebar = () => {
+  document.querySelector('.sidebar').classList.remove('open');
+  document.getElementById('sidebar-overlay').classList.remove('visible');
+};
+
+// ── EVENT LISTENERS ───────────────────────────────────────────────────────────
+
+window.addEventListener('resize', () => {
+  resizeBubbles();
+  const yls = d3.select('#yearLineSvg');
+  if (!yls.empty() && yls.node().offsetParent) drawYearLine();
+});
+
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape')
     document.querySelectorAll('.info-modal-overlay.open').forEach((el) => el.classList.remove('open'));
