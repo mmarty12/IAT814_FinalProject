@@ -23,8 +23,8 @@ export function hexToRgba(hex, alpha) {
 }
 
 export function fontSizes(r) {
-  const name = Math.min(Math.max(r * 0.22, 8), 20);
-  const rating = Math.min(Math.max(r * 0.17, 7), 15);
+  const name = Math.min(Math.max(r * 0.22, 10), 20); // was min 8
+  const rating = Math.min(Math.max(r * 0.17, 9), 15); // was min 7
   return { name, rating };
 }
 

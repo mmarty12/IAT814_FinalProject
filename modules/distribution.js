@@ -142,9 +142,5 @@ function setResetVisible(visible) {
 function updateBreadcrumb(cat, pt) {
   const el = document.getElementById('dist-breadcrumb');
   if (!el) return;
-  if (!cat && !pt) {
-    el.textContent = 'Click a bar to filter';
-    return;
-  }
   el.textContent = [cat, pt].filter(Boolean).join(' → ');
 }

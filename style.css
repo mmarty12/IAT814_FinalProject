@@ -909,3 +909,87 @@ body {
 
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+.bubble-legend {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(4px);
+  border: 1px solid #e8e4de;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  pointer-events: none; /* doesn't block bubble interactions */
+  z-index: 10;
+}
+
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legend-label {
+  color: #555;
+}
+
+.size-legend {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #e8e4de;
+}
+
+.size-legend-title {
+  font-size: 10px;
+  color: #292828;
+  margin-bottom: 10px;
+}
+
+.size-legend svg {
+  margin-bottom: 14px; /* room for the 8.2 / 9.0 labels */
+  color: #202020;
+}
+
+.slc {
+  border-radius: 50%;
+  border: 1.5px solid #888;
+  background: transparent;
+}
+
+.slc-sm {
+  width: 14px;
+  height: 14px;
+}
+.slc-lg {
+  width: 24px;
+  height: 24px;
+}
+
+.legend-note {
+  font-size: 10px;
+  color: #313131;
+  line-height: 1.5;
+  margin: 8px 0 0;
+  padding-top: 8px;
+  border-top: 1px solid #e8e4de;
+}
+
+.legend-note strong {
+  color: #000000;
+  font-weight: 600;
+}
+
+.dist-hint {
+  font-size: 14px;
+  margin-bottom: 15px;
+}

@@ -1,5 +1,5 @@
 import { loadData } from './modules/dataLoader.js';
-import { resizeBubbles, filterGenre, setupBubbleInteractions } from './modules/bubbleMap.js';
+import { resizeBubbles, filterGenre, setupBubbleInteractions, buildBubbleLegend } from './modules/bubbleMap.js';
 import {
   populateStats,
   populateCategoryStats,
@@ -28,6 +28,7 @@ async function initialize() {
     // Setup bubble map interactions (tooltip, resize)
     setupBubbleInteractions();
     resizeBubbles();
+    buildBubbleLegend();
 
     // Render all charts
     populate();

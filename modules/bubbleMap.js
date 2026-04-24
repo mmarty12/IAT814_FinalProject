@@ -360,3 +360,102 @@ function genreMatchesFilter(game) {
   const genres = game.genres || [game.primaryGenre];
   return bin && genres.some((g) => bin.includes(g));
 }
+
+// build legend dynamically after COLORS is populated
+export function buildBubbleLegend() {
+  const legend = d3.select('.bubble-legend');
+  legend.selectAll('*').remove();
+
+  // genre rows
+  Object.entries(GENRE_BINS).forEach(([bin, genres]) => {
+    const sampleColor = COLORS[genres[0]] || '#888';
+    const row = legend.append('div').attr('class', 'legend-row');
+    row.append('span').attr('class', 'legend-dot').style('background', sampleColor);
+    row.append('span').attr('class', 'legend-label').text(bin);
+  });
+
+  legend.append('div').attr('class', 'legend-note').html(`
+    <strong>Colors</strong> represent genre groups.<br>
+    Shades vary within each group<br>
+    by individual category.
+  `);
+
+  // ── size spectrum legend ───────────────────────────────────────────────────
+  const sizeLegend = legend.append('div').attr('class', 'size-legend');
+  sizeLegend.append('div').attr('class', 'size-legend-title').text('Bubble size = avg rating');
+
+  const W = 150,
+    H = 36;
+  const svg = sizeLegend
+    .append('svg')
+    .attr('width', W)
+    .attr('height', H)
+    .style('display', 'block')
+    .style('overflow', 'visible');
+
+  const minRating = 8.2,
+    maxRating = 9.0;
+  const minR = 6,
+    maxR = 18;
+  const steps = 5;
+  const positions = [10, 35, 65, 98, 138]; // fixed x positions — one per step
+
+  // ── circles ────────────────────────────────────────────────────────────────
+  for (let i = 0; i < steps; i++) {
+    const t = i / (steps - 1);
+    const r = minR + t * (maxR - minR);
+    const cx = positions[i];
+    const cy = H - r;
+
+    svg
+      .append('circle')
+      .attr('cx', cx)
+      .attr('cy', cy)
+      .attr('r', r)
+      .attr('fill', 'none')
+      .attr('stroke', '#888')
+      .attr('stroke-width', 1.2);
+  }
+
+  // ── labels (outside loop) ──────────────────────────────────────────────────
+  const labelY = H + 15;
+
+  svg
+    .append('text')
+    .attr('x', positions[0])
+    .attr('y', labelY)
+    .attr('text-anchor', 'middle')
+    .attr('font-size', '9px')
+    .attr('fill', '#aaa')
+    .attr('font-family', 'Inter, sans-serif')
+    .text(minRating.toFixed(1));
+
+  svg
+    .append('text')
+    .attr('x', positions[steps - 1])
+    .attr('y', labelY)
+    .attr('text-anchor', 'middle')
+    .attr('font-size', '9px')
+    .attr('fill', '#aaa')
+    .attr('font-family', 'Inter, sans-serif')
+    .text(maxRating.toFixed(1));
+
+  // ── arrow between labels (outside loop) ────────────────────────────────────
+  const arrowX1 = positions[0] + 14;
+  const arrowX2 = positions[steps - 1] - 14;
+  const arrowY = H + 12;
+
+  svg
+    .append('line')
+    .attr('x1', arrowX1)
+    .attr('y1', arrowY)
+    .attr('x2', arrowX2)
+    .attr('y2', arrowY)
+    .attr('stroke', '#ccc')
+    .attr('stroke-width', 1);
+
+  svg
+    .append('polygon')
+    .attr('points', `${arrowX2},${arrowY - 3} ${arrowX2 + 6},${arrowY} ${arrowX2},${arrowY + 3}`)
+    .attr('fill', '#ccc');
+}

@@ -1,24 +1,75 @@
 /**
  * Bar chart visualization
  */
-
 export function buildBars(id, data, maxVal) {
   const el = d3.select(`#${id}`);
   if (el.empty()) return;
   const max = maxVal || d3.max(data, (d) => d.val);
   el.selectAll('*').remove();
 
+  // shared tooltip element — one per page
+  let tt = document.getElementById('bar-name-tooltip');
+  if (!tt) {
+    tt = document.createElement('div');
+    tt.id = 'bar-name-tooltip';
+    tt.style.cssText = `
+      position: fixed;
+      background: #333;
+      color: white;
+      font-size: 11px;
+      font-family: Inter, sans-serif;
+      padding: 5px 10px;
+      border-radius: 5px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s ease;
+      z-index: 9999;
+      white-space: nowrap;
+      max-width: 320px;
+      white-space: normal;
+      line-height: 1.4;
+    `;
+    document.body.appendChild(tt);
+  }
+
   data.forEach((d) => {
     const pct = ((d.val / max) * 100).toFixed(1);
     const col = d.color || '#2d6a4f';
+    const isTruncated = d.name.length > 28;
+
     const barRow = el.append('div').attr('class', 'bar-row');
-    barRow.append('div').attr('class', 'bar-name').attr('title', d.name).text(d.name);
+
+    const nameEl = barRow
+      .append('div')
+      .attr('class', 'bar-name')
+      .text(isTruncated ? d.name.slice(0, 26) + '…' : d.name);
+
+    // only attach tooltip if name is truncated
+    if (isTruncated) {
+      nameEl.style('cursor', 'default');
+
+      nameEl
+        .on('mouseenter', function (event) {
+          tt.textContent = d.name;
+          tt.style.opacity = '1';
+          tt.style.left = `${Math.min(event.clientX + 12, window.innerWidth - 340)}px`;
+          tt.style.top = `${event.clientY - 32}px`;
+        })
+        .on('mousemove', function (event) {
+          tt.style.left = `${Math.min(event.clientX + 12, window.innerWidth - 340)}px`;
+          tt.style.top = `${event.clientY - 32}px`;
+        })
+        .on('mouseleave', () => {
+          tt.style.opacity = '0';
+        });
+    }
+
     const barTrack = barRow.append('div').attr('class', 'bar-track');
     barTrack
       .append('div')
       .attr('class', 'bar-fill')
       .style('width', `${pct}%`)
-      .style('background', `${col}18`)
+      .style('background', `${col}28`)
       .style('border-left', `3px solid ${col}`)
       .append('span')
       .style('color', col)
