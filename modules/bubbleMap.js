@@ -318,26 +318,23 @@ function renderPinPanel() {
     const card = document.createElement('div');
     card.className = 'pin-card';
     card.innerHTML = `
-    <div>
-      <div class="pin-card-name">${g.name}</div>
-      <div class="pin-card-meta">${g.genres[0]} · ${g.year}</div>
-      <div class="pin-card-rating">★ ${g.rating.toFixed(2)}</div>
-      <div class="pin-card-meta">${g.votes.toLocaleString()} ratings</div>
-    </div>
-    <button class="pin-card-remove">✕</button>
-  `;
+      <div style="flex:1; min-width:0;">
+        <div class="pin-card-name">${g.name}</div>
+        <div class="pin-card-meta">${g.genres[0]} · ${g.year}</div>
+        <div class="pin-card-rating">★ ${g.rating.toFixed(2)}</div>
+        <div class="pin-card-meta">${g.votes.toLocaleString()} ratings</div>
+      </div>
+      <button class="pin-card-remove">✕</button>
+    `;
 
-    // attach event properly (no inline onclick)
     card.querySelector('.pin-card-remove').addEventListener('click', () => unpinGame(g.name));
-
     cards.appendChild(card);
 
-    // add "vs" AFTER every card except the last
     if (i < pinnedGames.length - 1) {
-      const div = document.createElement('div');
-      div.className = 'pin-divider';
-      div.textContent = 'vs';
-      cards.appendChild(div);
+      const divider = document.createElement('div');
+      divider.className = 'pin-divider';
+      divider.textContent = 'vs';
+      cards.appendChild(divider);
     }
   });
 
@@ -386,12 +383,7 @@ export function buildBubbleLegend() {
 
   const W = 150,
     H = 36;
-  const svg = sizeLegend
-    .append('svg')
-    .attr('width', W)
-    .attr('height', H)
-    .style('display', 'block')
-    .style('overflow', 'visible');
+  const svg = sizeLegend.append('svg').attr('width', W).attr('height', H).style('display', 'block').style('overflow', 'visible');
 
   const minRating = 8.2,
     maxRating = 9.0;
@@ -407,14 +399,7 @@ export function buildBubbleLegend() {
     const cx = positions[i];
     const cy = H - r;
 
-    svg
-      .append('circle')
-      .attr('cx', cx)
-      .attr('cy', cy)
-      .attr('r', r)
-      .attr('fill', 'none')
-      .attr('stroke', '#888')
-      .attr('stroke-width', 1.2);
+    svg.append('circle').attr('cx', cx).attr('cy', cy).attr('r', r).attr('fill', 'none').attr('stroke', '#888').attr('stroke-width', 1.2);
   }
 
   // ── labels (outside loop) ──────────────────────────────────────────────────
@@ -445,14 +430,7 @@ export function buildBubbleLegend() {
   const arrowX2 = positions[steps - 1] - 14;
   const arrowY = H + 12;
 
-  svg
-    .append('line')
-    .attr('x1', arrowX1)
-    .attr('y1', arrowY)
-    .attr('x2', arrowX2)
-    .attr('y2', arrowY)
-    .attr('stroke', '#ccc')
-    .attr('stroke-width', 1);
+  svg.append('line').attr('x1', arrowX1).attr('y1', arrowY).attr('x2', arrowX2).attr('y2', arrowY).attr('stroke', '#ccc').attr('stroke-width', 1);
 
   svg
     .append('polygon')

@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project - Mariia Martyniuk</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -31,45 +28,25 @@
         </div>
         <div class="sidebar-section">
           <div class="sidebar-label">Overview</div>
-          <button class="nav-item active" onclick="switchView('bubbles', this)">
-            <span class="nav-dot"></span>Game Popularity Map
-          </button>
+          <button class="nav-item active" onclick="switchView('bubbles', this)"><span class="nav-dot"></span>Game Popularity Map</button>
         </div>
         <div class="sidebar-section">
           <div class="sidebar-label">Ratings</div>
-          <button class="nav-item" onclick="switchView('byname', this)">
-            <span class="nav-dot"></span>By Game Name
-          </button>
-          <button class="nav-item" onclick="switchView('bycategory', this)">
-            <span class="nav-dot"></span>By Category
-          </button>
-          <button class="nav-item" onclick="switchView('bymechanic', this)">
-            <span class="nav-dot"></span>By Mechanic
-          </button>
+          <button class="nav-item" onclick="switchView('byname', this)"><span class="nav-dot"></span>By Game Name</button>
+          <button class="nav-item" onclick="switchView('bycategory', this)"><span class="nav-dot"></span>By Category</button>
+          <button class="nav-item" onclick="switchView('bymechanic', this)"><span class="nav-dot"></span>By Mechanic</button>
         </div>
         <div class="sidebar-section">
           <div class="sidebar-label">Analysis</div>
-          <button class="nav-item" onclick="switchView('expansions', this)">
-            <span class="nav-dot"></span>By Number of Expansions
-          </button>
-          <button class="nav-item" onclick="switchView('teamsize', this)">
-            <span class="nav-dot"></span>By Team Size
-          </button>
-          <button class="nav-item" onclick="switchView('playtime', this)">
-            <span class="nav-dot"></span>By Playtime
-          </button>
-          <button class="nav-item" onclick="switchView('byyear', this)">
-            <span class="nav-dot"></span>By Year Released
-          </button>
+          <button class="nav-item" onclick="switchView('expansions', this)"><span class="nav-dot"></span>By Number of Expansions</button>
+          <button class="nav-item" onclick="switchView('teamsize', this)"><span class="nav-dot"></span>By Team Size</button>
+          <button class="nav-item" onclick="switchView('playtime', this)"><span class="nav-dot"></span>By Playtime</button>
+          <button class="nav-item" onclick="switchView('byyear', this)"><span class="nav-dot"></span>By Year Released</button>
         </div>
         <div class="sidebar-section">
           <div class="sidebar-label">Deep Dive</div>
-          <button class="nav-item" onclick="switchView('distribution', this)">
-            <span class="nav-dot"></span>Distribution Map
-          </button>
-          <button class="nav-item" onclick="switchView('correlation', this)">
-            <span class="nav-dot"></span>Mechanics × Ratings
-          </button>
+          <button class="nav-item" onclick="switchView('distribution', this)"><span class="nav-dot"></span>Distribution Map</button>
+          <button class="nav-item" onclick="switchView('correlation', this)"><span class="nav-dot"></span>Mechanics × Ratings</button>
           <div class="sidebar-footer-note">
             Created by Mariia Martyniuk for
             <p>IAT814 Data Visualization Course</p>
@@ -80,13 +57,7 @@
       <main class="main">
         <div class="topbar">
           <div class="topbar-title" id="topbar-title">Game Popularity — Bubble Map</div>
-          <button
-            class="topbar-pill info-dataset-btn"
-            onclick="openInfoModal('modal-bubbles')"
-            title="About this visualization"
-          >
-            About the dataset
-          </button>
+          <button class="topbar-pill info-dataset-btn" onclick="openInfoModal('modal-bubbles')" title="About this visualization">About the dataset</button>
           <div id="genre-filters" style="display: flex; gap: 8px; flex-wrap: wrap">
             <button class="topbar-pill active" onclick="filterGenre(this, 'all')">All</button>
             <button class="topbar-pill" onclick="filterGenre(this, 'War & History')">War & History</button>
@@ -110,52 +81,49 @@
               <div class="dist-instructions-steps">
                 <div class="dist-step">
                   <div class="dist-step-text">
-                    This visualization is based on a large dataset of approximately <strong>90,000 board games</strong>,
-                    originally sourced from <strong>BoardGameGeek</strong> and found on <strong>Kaggle</strong>.
+                    This visualization is based on a large dataset of approximately <strong>90,000 board games</strong>, originally sourced from
+                    <strong>BoardGameGeek</strong> and found on <strong>Kaggle</strong>.
                   </div>
                 </div>
 
                 <div class="dist-step">
                   <div class="dist-step-text">
-                    The dataset includes key attributes such as <strong>user ratings</strong>,
-                    <strong>number of votes</strong>, <strong>genres</strong>, <strong>mechanics</strong>,
-                    <strong>playtime</strong>, and <strong>release year</strong>, enabling exploration of popularity
-                    patterns and design trends across games.
+                    The dataset includes key attributes such as <strong>user ratings</strong>, <strong>number of votes</strong>, <strong>genres</strong>,
+                    <strong>mechanics</strong>, <strong>playtime</strong>, and <strong>release year</strong>, enabling exploration of popularity patterns and design
+                    trends across games.
                   </div>
                 </div>
 
                 <div class="dist-step">
                   <div class="dist-step-text">
-                    Thess visualizations are primarily designed for <strong>casual and family players</strong> who want
-                    to discover popular and accessible games. It can also support
-                    <strong>quick trend exploration</strong> for reviewers or designers, though it is not intended as a
-                    deep analytical tool.
+                    Thess visualizations are primarily designed for <strong>casual and family players</strong> who want to discover popular and accessible games. It can
+                    also support <strong>quick trend exploration</strong> for reviewers or designers, though it is not intended as a deep analytical tool.
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div id="view-bubbles" style="width: 92%; height: 100%; min-height: 500px; position: relative">
+          <div id="view-bubbles" style="width: 100%; height: 100%; min-height: 500px; position: relative">
             <svg id="bubbleSvg" style="width: 100%; height: 100%; display: block"></svg>
-          </div>
-          <div class="bubble-legend">
-            <div class="size-legend">
-              <div class="size-legend-title">Bubble size = avg rating</div>
-              <div class="size-legend-circles">
-                <div class="slc slc-sm"></div>
-                <span>8.2</span>
-                <div class="slc slc-lg"></div>
-                <span>9.0</span>
+            <div class="bubble-legend">
+              <div class="size-legend">
+                <div class="size-legend-title">Bubble size = avg rating</div>
+                <div class="size-legend-circles">
+                  <div class="slc slc-sm"></div>
+                  <span>8.2</span>
+                  <div class="slc slc-lg"></div>
+                  <span>9.0</span>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- pinned comparison panel -->
-          <div id="pin-panel" class="pin-panel">
-            <div class="pin-panel-header">
-              <span>Comparing</span>
-              <button onclick="clearPins()">✕ Clear</button>
+            <!-- pinned comparison panel -->
+            <div id="pin-panel" class="pin-panel">
+              <div class="pin-panel-header">
+                <span>Comparing</span>
+                <button onclick="clearPins()">✕ Clear</button>
+              </div>
+              <div id="pin-cards" class="pin-cards"></div>
             </div>
-            <div id="pin-cards" class="pin-cards"></div>
           </div>
 
           <!-- Rating of Games by Name -->
@@ -373,9 +341,7 @@
           <div class="secondary-panel" id="view-distribution">
             <div class="panel-heading">
               Distribution of Games
-              <button class="info-btn" onclick="openInfoModal('modal-distribution')" title="How to explore this chart">
-                i
-              </button>
+              <button class="info-btn" onclick="openInfoModal('modal-distribution')" title="How to explore this chart">i</button>
             </div>
 
             <div class="info-modal-overlay" id="modal-distribution" onclick="closeInfoModal('modal-distribution')">
@@ -388,22 +354,21 @@
                   <div class="dist-step">
                     <div class="dist-step-num">1</div>
                     <div class="dist-step-text">
-                      <strong>Click any genre bar</strong> on the left to see how games in that category break down by
-                      playtime — the bottom chart will update to reflect only those games.
+                      <strong>Click any genre bar</strong> on the left to see how games in that category break down by playtime — the bottom chart will update to reflect
+                      only those games.
                     </div>
                   </div>
                   <div class="dist-step">
                     <div class="dist-step-num">2</div>
                     <div class="dist-step-text">
-                      <strong>Click any playtime bar</strong> on the bottom chart to filter the genre chart and discover
-                      which categories dominate that session length.
+                      <strong>Click any playtime bar</strong> on the bottom chart to filter the genre chart and discover which categories dominate that session length.
                     </div>
                   </div>
                   <div class="dist-step">
                     <div class="dist-step-num">3</div>
                     <div class="dist-step-text">
-                      <strong>Click the same bar again</strong> to deselect it and return both charts to the full
-                      dataset. Or use <em>Clear filter</em> to reset at any time.
+                      <strong>Click the same bar again</strong> to deselect it and return both charts to the full dataset. Or use <em>Clear filter</em> to reset at any
+                      time.
                     </div>
                   </div>
                 </div>
@@ -438,9 +403,7 @@
           <div class="secondary-panel" id="view-correlation">
             <div class="panel-heading">
               Mechanics × Categories × Ratings
-              <button class="info-btn" onclick="openInfoModal('modal-correlation')" title="How to read this section">
-                i
-              </button>
+              <button class="info-btn" onclick="openInfoModal('modal-correlation')" title="How to read this section">i</button>
             </div>
 
             <div class="info-modal-overlay" id="modal-correlation" onclick="closeInfoModal('modal-correlation')">
@@ -453,35 +416,29 @@
                   <div class="dist-step">
                     <div class="dist-step-num">1</div>
                     <div class="dist-step-text">
-                      <strong>Heatmap shows Mechanic × Category relation.</strong> Each cell shows the average community
-                      rating for games that combine a specific mechanic (rows) with a specific category (columns).
-                      Darker green means a higher average rating.
-                      <p>
-                        <strong>Note:</strong> the scale runs from the lowest to the highest value found in the data, so
-                        colours are relative to this chart only.
-                      </p>
+                      <strong>Heatmap shows Mechanic × Category relation.</strong> Each cell shows the average community rating for games that combine a specific mechanic
+                      (rows) with a specific category (columns). Darker green means a higher average rating.
+                      <p><strong>Note:</strong> the scale runs from the lowest to the highest value found in the data, so colours are relative to this chart only.</p>
                     </div>
                   </div>
                   <div class="dist-step">
                     <div class="dist-step-num">2</div>
                     <div class="dist-step-text">
-                      <strong>A dash (—) means no data.</strong> That mechanic and category combination had fewer than 5
-                      games in the dataset, so no reliable average could be computed.
+                      <strong>A dash (—) means no data.</strong> That mechanic and category combination had fewer than 5 games in the dataset, so no reliable average
+                      could be computed.
                     </div>
                   </div>
                   <div class="dist-step">
                     <div class="dist-step-num">3</div>
                     <div class="dist-step-text">
-                      <strong>Dot plot represents Top combinations.</strong> The chart below ranks the eight
-                      highest-rated mechanic–category pairs. The horizontal axis is scaled tightly around the actual
-                      value range, so small differences between dots are meaningful.
+                      <strong>Dot plot represents Top combinations.</strong> The chart below ranks the eight highest-rated mechanic–category pairs. The horizontal axis is
+                      scaled tightly around the actual value range, so small differences between dots are meaningful.
                     </div>
                   </div>
                   <div class="dist-step">
                     <div class="dist-step-text">
-                      <strong>HINT: What to look for?</strong> Combinations that score consistently above 7.0 tend to be
-                      niche, highly-engaged audiences. A mechanic that scores high across multiple categories (entire
-                      row is dark) is a strong design signal — players reward it regardless of theme.
+                      <strong>HINT: What to look for?</strong> Combinations that score consistently above 7.0 tend to be niche, highly-engaged audiences. A mechanic that
+                      scores high across multiple categories (entire row is dark) is a strong design signal — players reward it regardless of theme.
                     </div>
                   </div>
                 </div>
